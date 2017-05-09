@@ -1,0 +1,364 @@
+\hypertarget{classplateau}{}\section{plateau Class Reference}
+\label{classplateau}\index{plateau@{plateau}}
+
+
+classe plateau  
+
+
+
+
+{\ttfamily \#include $<$plateau.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplateau_a4a106572264e08856397e78371cd047b}{plateau} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{classplateau_a336a9f14762c3821cf717cca91f6ca86}{$\sim$plateau} ()
+\begin{DoxyCompactList}\small\item\em Destructeur du plateau. \end{DoxyCompactList}\item 
+\hyperlink{classplateau_a4e5cc7f71d0a559f595e48e2533a6a00}{plateau} (int n)
+\begin{DoxyCompactList}\small\item\em Constructeur avec arguments. \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_a0b81b62bba2b707d81dd8c2815a8bfd0}{afficher} (char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affichage plateau avec des hexagones. \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_a999e3e8e2e9b4810fb42dc7e39193019}{afficher2} (char $\ast$p)
+\begin{DoxyCompactList}\small\item\em affichage du plateau avec des losanges \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_ad7ba541e3bee6bb45ab3eda6c48242c0}{aff\+\_\+contenu} (int cont, int nb, char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affiche contenu d\textquotesingle{}une case \char`\"{}n\char`\"{} fois. \end{DoxyCompactList}\item 
+int \hyperlink{classplateau_a7dc94d2ffd474bd7871deb25d9af8091}{r\+\_\+der\+\_\+ligne} ()
+\begin{DoxyCompactList}\small\item\em Donne la valeur de la dernière ligne. \end{DoxyCompactList}\item 
+int \hyperlink{classplateau_ae9917aadf7efa09d855f98477da9e6f2}{Rtaillecote} ()
+\begin{DoxyCompactList}\small\item\em Donne la valeur de la taille demandée par le joueur. \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_a9c40ed64826dc83cd9449d023121d9d7}{aff\+\_\+bas\+\_\+hexa} (int a, bool e\+\_\+l, int sep, bool p\+\_\+l, char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affichage bas hexa normaux. \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_ae9f7525df363ec9eab150e6ed312207f}{aff\+\_\+haut\+\_\+hexa} (int a, int sep, bool e\+\_\+l, bool p\+\_\+l, bool l\+\_\+l, char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affichage bas hexa normaux. \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_\+hexa2} (int a, bool e\+\_\+l, int sep, bool p\+\_\+l, char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affichage bas hexa en losange. \end{DoxyCompactList}\item 
+void \hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2} (int a, int sep, bool e\+\_\+l, bool p\+\_\+l, bool l\+\_\+l, char $\ast$p)
+\begin{DoxyCompactList}\small\item\em Affichage haut hexa en losange. \end{DoxyCompactList}\item 
+std\+::multimap$<$ char, std\+::pair$<$ int, int $>$ $>$ \hyperlink{classplateau_a1ab855651bf0107e7af3867873d54389}{ret\+Particuliers} ()
+\begin{DoxyCompactList}\small\item\em Retourne les coordonnées des pions aux coins et aux côtés. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classplateau_a973c415e1427c7fa427d2d8da95f5cff}{placerpion} (std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$)
+\begin{DoxyCompactList}\small\item\em Permet de placer un pion ( = affecter une valeur à une case) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classplateau_a3a22c0369525080629eba2ac2edab03e}{taillecote}
+\begin{DoxyCompactList}\small\item\em Taille d\textquotesingle{}un côté du plateau. \end{DoxyCompactList}\item 
+int \hyperlink{classplateau_a3ed9526208bf28f0063bdf7c0efb9391}{der\+\_\+ligne}
+\begin{DoxyCompactList}\small\item\em Indice de la dernière ligne. \end{DoxyCompactList}\item 
+vector$<$ int $>$ $\ast$ \hyperlink{classplateau_a1cf99c526864d850ffe97f5507ab1bcb}{hexa}
+\begin{DoxyCompactList}\small\item\em La structure de données pour le jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe plateau 
+
+La classe contenant tout le plateau. Interagit fortement avec la classe jeu, et à moindre envergure avec la classe player.
+
+Librairies incluses \+:
+\begin{DoxyItemize}
+\item iostream
+\item vector
+\item map 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplateau_a4a106572264e08856397e78371cd047b}\label{classplateau_a4a106572264e08856397e78371cd047b}} 
+\index{plateau@{plateau}!plateau@{plateau}}
+\index{plateau@{plateau}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{plateau()}{plateau()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily plateau\+::plateau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut. 
+
+Demande une taille de plateau au joueur et ensuite crée un plateau de la taille demandée, avec des cases contenant la valeur minimale des entiers dans C++ (-\/2147483648) pour signifier que la case est vide. \mbox{\Hypertarget{classplateau_a336a9f14762c3821cf717cca91f6ca86}\label{classplateau_a336a9f14762c3821cf717cca91f6ca86}} 
+\index{plateau@{plateau}!````~plateau@{$\sim$plateau}}
+\index{````~plateau@{$\sim$plateau}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{$\sim$plateau()}{~plateau()}}
+{\footnotesize\ttfamily plateau\+::$\sim$plateau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur du plateau. 
+
+\mbox{\Hypertarget{classplateau_a4e5cc7f71d0a559f595e48e2533a6a00}\label{classplateau_a4e5cc7f71d0a559f595e48e2533a6a00}} 
+\index{plateau@{plateau}!plateau@{plateau}}
+\index{plateau@{plateau}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{plateau()}{plateau()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily plateau\+::plateau (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Constructeur avec arguments. 
+
+Permet à la classe jeu de créer un plateau sans pour autant demander au joueur quoi que ce soit. La taille passée en argument sera donc déterminée par la classe jeu. 
+\begin{DoxyParams}{Parameters}
+{\em n} & taille demandée pour le plateau. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classplateau_a9c40ed64826dc83cd9449d023121d9d7}\label{classplateau_a9c40ed64826dc83cd9449d023121d9d7}} 
+\index{plateau@{plateau}!aff\+\_\+bas\+\_\+hexa@{aff\+\_\+bas\+\_\+hexa}}
+\index{aff\+\_\+bas\+\_\+hexa@{aff\+\_\+bas\+\_\+hexa}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{aff\+\_\+bas\+\_\+hexa()}{aff\_bas\_hexa()}}
+{\footnotesize\ttfamily void plateau\+::aff\+\_\+bas\+\_\+hexa (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{bool}]{e\+\_\+l,  }\item[{int}]{sep,  }\item[{bool}]{p\+\_\+l,  }\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage bas hexa normaux. 
+
+Affiche le bas des hexagones. 
+\begin{DoxyParams}{Parameters}
+{\em a} & indice de la ligne de l\textquotesingle{}hexa a afficher \\
+\hline
+{\em e\+\_\+l} & est-\/ce que l\textquotesingle{}on est entre 2 lignes ? si oui, afficher des underscore \\
+\hline
+{\em sep} & le nombre d\textquotesingle{}espaces à mettre avant chaque ligne (x4) \\
+\hline
+{\em p\+\_\+l} & sert à déterminer si on est sur la première ligne de la grille. ce booléen permet d\textquotesingle{}enlever un des appels de la fonction et de rajouter une ligne pour rien \\
+\hline
+{\em p} & les identifiants joueurs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}\label{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}} 
+\index{plateau@{plateau}!aff\+\_\+bas\+\_\+hexa2@{aff\+\_\+bas\+\_\+hexa2}}
+\index{aff\+\_\+bas\+\_\+hexa2@{aff\+\_\+bas\+\_\+hexa2}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{aff\+\_\+bas\+\_\+hexa2()}{aff\_bas\_hexa2()}}
+{\footnotesize\ttfamily void plateau\+::aff\+\_\+bas\+\_\+hexa2 (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{bool}]{e\+\_\+l,  }\item[{int}]{sep,  }\item[{bool}]{p\+\_\+l,  }\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage bas hexa en losange. 
+
+Affiche le bas des hexagones. 
+\begin{DoxyParams}{Parameters}
+{\em a} & indice de la ligne de l\textquotesingle{}hexa a afficher \\
+\hline
+{\em e\+\_\+l} & est-\/ce que l\textquotesingle{}on est entre 2 lignes ? si oui, afficher des underscore \\
+\hline
+{\em sep} & le nombre d\textquotesingle{}espaces à mettre avant chaque ligne (x4) \\
+\hline
+{\em p\+\_\+l} & sert à déterminer si on est sur la première ligne de la grille. ce booléen permet d\textquotesingle{}enlever un des appels de la fonction et de rajouter une ligne pour rien \\
+\hline
+{\em p} & les identifiants joueurs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classplateau_ad7ba541e3bee6bb45ab3eda6c48242c0}\label{classplateau_ad7ba541e3bee6bb45ab3eda6c48242c0}} 
+\index{plateau@{plateau}!aff\+\_\+contenu@{aff\+\_\+contenu}}
+\index{aff\+\_\+contenu@{aff\+\_\+contenu}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{aff\+\_\+contenu()}{aff\_contenu()}}
+{\footnotesize\ttfamily void plateau\+::aff\+\_\+contenu (\begin{DoxyParamCaption}\item[{int}]{cont,  }\item[{int}]{nb,  }\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affiche contenu d\textquotesingle{}une case \char`\"{}n\char`\"{} fois. 
+
+Permet d\textquotesingle{}afficher le contenu (l\textquotesingle{}identifiant qui est contenu dans la case) un nombre de fois donné par la fonction \hyperlink{classplateau_a9c40ed64826dc83cd9449d023121d9d7}{aff\+\_\+bas\+\_\+hexa()}, \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_\+hexa2()}, \hyperlink{classplateau_ae9f7525df363ec9eab150e6ed312207f}{aff\+\_\+haut\+\_\+hexa()}, et \hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2()}. 
+\begin{DoxyParams}{Parameters}
+{\em cont} & Le contenu de la case en question \\
+\hline
+{\em nb} & Le nombre de fois qu\textquotesingle{}on souhaite afficher les caractères \\
+\hline
+{\em p} & Les identifiants joueur pour savoir quel caractère afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classplateau_a9c40ed64826dc83cd9449d023121d9d7}{aff\+\_\+bas\+\_\+hexa()}, \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_\+hexa2()}, \hyperlink{classplateau_ae9f7525df363ec9eab150e6ed312207f}{aff\+\_\+haut\+\_\+hexa()} and \hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classplateau_ae9f7525df363ec9eab150e6ed312207f}\label{classplateau_ae9f7525df363ec9eab150e6ed312207f}} 
+\index{plateau@{plateau}!aff\+\_\+haut\+\_\+hexa@{aff\+\_\+haut\+\_\+hexa}}
+\index{aff\+\_\+haut\+\_\+hexa@{aff\+\_\+haut\+\_\+hexa}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{aff\+\_\+haut\+\_\+hexa()}{aff\_haut\_hexa()}}
+{\footnotesize\ttfamily void plateau\+::aff\+\_\+haut\+\_\+hexa (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{sep,  }\item[{bool}]{e\+\_\+l,  }\item[{bool}]{p\+\_\+l,  }\item[{bool}]{l\+\_\+l,  }\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage bas hexa normaux. 
+
+Haut de l\textquotesingle{}hexagone \+: 
+\begin{DoxyPre}
+  \_\_\_\_      = Ligne 1 (necessaire seulement pour le haut de la grille)
+ /    \textbackslash{}     = Ligne 2
+/      \textbackslash{}    = Ligne 3
+\end{DoxyPre}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & indice de la ligne de l\textquotesingle{}hexa a afficher \\
+\hline
+{\em sep} & le nombre d\textquotesingle{}espaces à mettre avant chaque ligne (x6) \\
+\hline
+{\em e\+\_\+l} & est-\/ce que l\textquotesingle{}on est entre 2 lignes ? si oui, afficher des underscore \\
+\hline
+{\em p\+\_\+l} & sert à déterminer si on est sur la première ligne de la grille. ce booléen permet d\textquotesingle{}enlever un des appels de la fonction et de rajouter une ligne pour rien \\
+\hline
+{\em l\+\_\+l} & determine si on est en derniere ligne \\
+\hline
+{\em p} & donne les player id \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classplateau_a0b81b62bba2b707d81dd8c2815a8bfd0}{afficher()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classplateau_ab720f7c75d770bf0d6381e080e7524b1}\label{classplateau_ab720f7c75d770bf0d6381e080e7524b1}} 
+\index{plateau@{plateau}!aff\+\_\+haut\+\_\+hexa2@{aff\+\_\+haut\+\_\+hexa2}}
+\index{aff\+\_\+haut\+\_\+hexa2@{aff\+\_\+haut\+\_\+hexa2}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{aff\+\_\+haut\+\_\+hexa2()}{aff\_haut\_hexa2()}}
+{\footnotesize\ttfamily void plateau\+::aff\+\_\+haut\+\_\+hexa2 (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{sep,  }\item[{bool}]{e\+\_\+l,  }\item[{bool}]{p\+\_\+l,  }\item[{bool}]{l\+\_\+l,  }\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage haut hexa en losange. 
+
+Haut de l\textquotesingle{}hexagone \+: 
+\begin{DoxyPre}
+        = Ligne 1 (necessaire seulement pour le haut de la grille)
+ /\textbackslash{}     = Ligne 2
+/  \textbackslash{}    = Ligne 3
+\end{DoxyPre}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & indice de la ligne de l\textquotesingle{}hexa a afficher \\
+\hline
+{\em e\+\_\+l} & est-\/ce que l\textquotesingle{}on est entre 2 lignes ? si oui, afficher des underscore \\
+\hline
+{\em sep} & le nombre d\textquotesingle{}espaces à mettre avant chaque ligne (x6) \\
+\hline
+{\em p\+\_\+l} & sert à déterminer si on est sur la première ligne de la grille. ce booléen permet d\textquotesingle{}enlever un des appels de la fonction et de rajouter une ligne pour rien \\
+\hline
+{\em l\+\_\+l} & determine si on est en derniere ligne \\
+\hline
+{\em p} & donne les player id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classplateau_a0b81b62bba2b707d81dd8c2815a8bfd0}\label{classplateau_a0b81b62bba2b707d81dd8c2815a8bfd0}} 
+\index{plateau@{plateau}!afficher@{afficher}}
+\index{afficher@{afficher}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{afficher()}{afficher()}}
+{\footnotesize\ttfamily void plateau\+::afficher (\begin{DoxyParamCaption}\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Affichage plateau avec des hexagones. 
+
+Cette visualisation du plateau est une visualisation en hexagone, donnant une vision facile de l\textquotesingle{}état du plateau. En revanche, celle-\/ci est assez compressée en hauteur. Cette méthode contient 2 étapes \+:
+\begin{DoxyEnumerate}
+\item On va faire la première partie de l\textquotesingle{}affichage des lignes, avant que l\textquotesingle{}on atteigne la ligne du milieu de la grille (qui est, par ailleurs, la plus longue). Le haut des haxagones sera donc affiché avec le fonction \hyperlink{classplateau_ae9f7525df363ec9eab150e6ed312207f}{aff\+\_\+haut\+\_\+hexa()}
+\item Pareil que la partie d\textquotesingle{}avant, mais pour le bas du plateau, avec la fonction \hyperlink{classplateau_a9c40ed64826dc83cd9449d023121d9d7}{aff\+\_\+bas\+\_\+hexa()} ~
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Les identifiants joueur pour que l\textquotesingle{}on puisse afficher leur cases avec les identifiants choisis auparavant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classplateau_ae9f7525df363ec9eab150e6ed312207f}{aff\+\_\+haut\+\_\+hexa()} and \hyperlink{classplateau_a9c40ed64826dc83cd9449d023121d9d7}{aff\+\_\+bas\+\_\+hexa()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classplateau_a999e3e8e2e9b4810fb42dc7e39193019}\label{classplateau_a999e3e8e2e9b4810fb42dc7e39193019}} 
+\index{plateau@{plateau}!afficher2@{afficher2}}
+\index{afficher2@{afficher2}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{afficher2()}{afficher2()}}
+{\footnotesize\ttfamily void plateau\+::afficher2 (\begin{DoxyParamCaption}\item[{char $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+affichage du plateau avec des losanges 
+
+Les losanges représentent les hexagones. Cette visualisation permet de voir le plateau de manière plus compacte. Cette méthode contient 2 étapes \+:
+\begin{DoxyEnumerate}
+\item On va faire la première partie de l\textquotesingle{}affichage des lignes, avant que l\textquotesingle{}on atteigne la ligne du milieu de la grille (qui est, par ailleurs, la plus longue). Le haut des haxagones sera donc affiché avec le fonction \hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2()}
+\item Pareil que la partie d\textquotesingle{}avant, mais pour le bas du plateau, avec la fonction \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_\+hexa2()} ~
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Les identifiants joueur pour que l\textquotesingle{}on puisse afficher leur cases avec les identifiants choisis auparavant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2()} and \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_\+hexa2()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classplateau_a973c415e1427c7fa427d2d8da95f5cff}\label{classplateau_a973c415e1427c7fa427d2d8da95f5cff}} 
+\index{plateau@{plateau}!placerpion@{placerpion}}
+\index{placerpion@{placerpion}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{placerpion()}{placerpion()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ plateau\+::placerpion (\begin{DoxyParamCaption}\item[{std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$}]{choix\+\_\+joueur }\end{DoxyParamCaption})}
+
+
+
+Permet de placer un pion ( = affecter une valeur à une case) 
+
+\mbox{\Hypertarget{classplateau_a7dc94d2ffd474bd7871deb25d9af8091}\label{classplateau_a7dc94d2ffd474bd7871deb25d9af8091}} 
+\index{plateau@{plateau}!r\+\_\+der\+\_\+ligne@{r\+\_\+der\+\_\+ligne}}
+\index{r\+\_\+der\+\_\+ligne@{r\+\_\+der\+\_\+ligne}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{r\+\_\+der\+\_\+ligne()}{r\_der\_ligne()}}
+{\footnotesize\ttfamily int plateau\+::r\+\_\+der\+\_\+ligne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Donne la valeur de la dernière ligne. 
+
+\mbox{\Hypertarget{classplateau_a1ab855651bf0107e7af3867873d54389}\label{classplateau_a1ab855651bf0107e7af3867873d54389}} 
+\index{plateau@{plateau}!ret\+Particuliers@{ret\+Particuliers}}
+\index{ret\+Particuliers@{ret\+Particuliers}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{ret\+Particuliers()}{retParticuliers()}}
+{\footnotesize\ttfamily std\+::multimap$<$ char, std\+::pair$<$ int, int $>$ $>$ plateau\+::ret\+Particuliers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retourne les coordonnées des pions aux coins et aux côtés. 
+
+Permet de savoir quels cases sont aux coins pour pouvoir vérifier si le joueur \mbox{\Hypertarget{classplateau_ae9917aadf7efa09d855f98477da9e6f2}\label{classplateau_ae9917aadf7efa09d855f98477da9e6f2}} 
+\index{plateau@{plateau}!Rtaillecote@{Rtaillecote}}
+\index{Rtaillecote@{Rtaillecote}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{Rtaillecote()}{Rtaillecote()}}
+{\footnotesize\ttfamily int plateau\+::\+Rtaillecote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Donne la valeur de la taille demandée par le joueur. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classplateau_a3ed9526208bf28f0063bdf7c0efb9391}\label{classplateau_a3ed9526208bf28f0063bdf7c0efb9391}} 
+\index{plateau@{plateau}!der\+\_\+ligne@{der\+\_\+ligne}}
+\index{der\+\_\+ligne@{der\+\_\+ligne}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{der\+\_\+ligne}{der\_ligne}}
+{\footnotesize\ttfamily int plateau\+::der\+\_\+ligne\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indice de la dernière ligne. 
+
+\mbox{\Hypertarget{classplateau_a1cf99c526864d850ffe97f5507ab1bcb}\label{classplateau_a1cf99c526864d850ffe97f5507ab1bcb}} 
+\index{plateau@{plateau}!hexa@{hexa}}
+\index{hexa@{hexa}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{hexa}{hexa}}
+{\footnotesize\ttfamily vector$<$int$>$$\ast$ plateau\+::hexa\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La structure de données pour le jeu. 
+
+\mbox{\Hypertarget{classplateau_a3a22c0369525080629eba2ac2edab03e}\label{classplateau_a3a22c0369525080629eba2ac2edab03e}} 
+\index{plateau@{plateau}!taillecote@{taillecote}}
+\index{taillecote@{taillecote}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{taillecote}{taillecote}}
+{\footnotesize\ttfamily int plateau\+::taillecote\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Taille d\textquotesingle{}un côté du plateau. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{plateau_8h}{plateau.\+h}\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/\hyperlink{plateau_8cpp}{plateau.\+cpp}\end{DoxyCompactItemize}

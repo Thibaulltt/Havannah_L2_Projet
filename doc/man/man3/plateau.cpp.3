@@ -1,0 +1,56 @@
+.TH "/Users/thibault/Google Drive/PROG/S4/Projet/cpp/plateau.cpp" 3 "Mon Apr 24 2017" "Havannah" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/thibault/Google Drive/PROG/S4/Projet/cpp/plateau.cpp \- Fichier source contenant les fonctions de la classe plateau\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include '\&.\&./h/plateau\&.h'\fP
+.br
+
+.SH "Detailed Description"
+.PP 
+Fichier source contenant les fonctions de la classe plateau\&. 
+
+Pour le plateau, j'ai choisi de représenter la grille hexagonale comme un tableau de dimensions (2*taillecote)-1 on doit faire un affichage en hexagone, pour cela j'ai choisi le symbole en 'ascii art' de l'hexagone suivant : 
+.PP
+.nf
+  ____
+ /    \
+/      \
+\      / 
+ \____/
+
+.fi
+.PP
+ Ce qui nous donne des grilles ressemblant à : 
+.PP
+.nf
+        ____ 
+       /    \
+  ____/      \____
+ /    \      /    \
+/      \____/      \
+\      /    \      /
+ \____/------\____/
+ /    \------/    \
+/======\____/======\
+\======/    \======/
+ \____/------\____/
+      \------/
+       \____/
+
+.fi
+.PP
+ Les pièces appartenant à des joueurs différents seront différenciées par le symbole qui les remplit\&. 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Havannah from the source code\&.

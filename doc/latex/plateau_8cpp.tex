@@ -1,0 +1,37 @@
+\hypertarget{plateau_8cpp}{}\section{/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/plateau.cpp File Reference}
+\label{plateau_8cpp}\index{/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/plateau.\+cpp@{/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/plateau.\+cpp}}
+
+
+Fichier source contenant les fonctions de la classe plateau.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../h/plateau.\+h\char`\"{}}\newline
+
+
+\subsection{Detailed Description}
+Fichier source contenant les fonctions de la classe plateau. 
+
+Pour le plateau, j\textquotesingle{}ai choisi de représenter la grille hexagonale comme un tableau de dimensions (2$\ast$taillecote)-\/1 on doit faire un affichage en hexagone, pour cela j\textquotesingle{}ai choisi le symbole en \char`\"{}ascii art\char`\"{} de l\textquotesingle{}hexagone suivant \+: \begin{DoxyVerb}  ____
+ /    \
+/      \
+\      / 
+ \____/
+\end{DoxyVerb}
+ Ce qui nous donne des grilles ressemblant à \+: \begin{DoxyVerb}        ____ 
+       /    \
+  ____/      \____
+ /    \      /    \
+/      \____/      \
+\      /    \      /
+ \____/------\____/
+ /    \------/    \
+/======\____/======\
+\======/    \======/
+ \____/------\____/
+      \------/
+       \____/
+\end{DoxyVerb}
+ Les pièces appartenant à des joueurs différents seront différenciées par le symbole qui les remplit. 

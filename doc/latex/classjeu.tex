@@ -1,0 +1,207 @@
+\hypertarget{classjeu}{}\section{jeu Class Reference}
+\label{classjeu}\index{jeu@{jeu}}
+
+
+classe jeu  
+
+
+
+
+{\ttfamily \#include $<$jeu.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjeu_a55385a33ef40e0579eb3a3634566c4a8}{$\sim$jeu} ()
+\begin{DoxyCompactList}\small\item\em Destructeur du jeu. \end{DoxyCompactList}\item 
+\hyperlink{classjeu_abc0e1ad9a05d57a06de111e9ccb3f8b9}{jeu} (int tp, int nbp)
+\begin{DoxyCompactList}\small\item\em Constructeur du jeu. \end{DoxyCompactList}\item 
+void \hyperlink{classjeu_a5b18141ecb3ed6cad4e8116e8248b461}{menu} ()
+\begin{DoxyCompactList}\small\item\em Interface pour le menu. \end{DoxyCompactList}\item 
+void \hyperlink{classjeu_a044947660d0990bd6869d3669306ba8c}{a} ()
+\begin{DoxyCompactList}\small\item\em Affichage des informations du tour. \end{DoxyCompactList}\item 
+void \hyperlink{classjeu_ac71ae1e00668be38e0e9b1e2f890639d}{tour} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant aux joueurs de faire un nouveau tour. \end{DoxyCompactList}\item 
+bool \hyperlink{classjeu_a7da98d2c8eaccacc01abb6d25777a7a0}{check\+\_\+win} ()
+\begin{DoxyCompactList}\small\item\em Fonction permettant de vérifier si un joueur a gagné. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplateau}{plateau} $\ast$ \hyperlink{classjeu_a7bd7f0a6992c018ddc2cdf2a0c6e1930}{hav}
+\begin{DoxyCompactList}\small\item\em Le plateau en question. \end{DoxyCompactList}\item 
+char \hyperlink{classjeu_af5d010efc2e6dec9ea8da739bd5f19b5}{nb\+\_\+players}
+\begin{DoxyCompactList}\small\item\em nombre de joueurs pour le jeu \end{DoxyCompactList}\item 
+char \hyperlink{classjeu_a725c0616180898259dd472d009e844fc}{nb\+\_\+ia}
+\begin{DoxyCompactList}\small\item\em nombre d\textquotesingle{}IA à gérer \end{DoxyCompactList}\item 
+int \hyperlink{classjeu_ae28d01ac3e91246e6269df4d62470913}{nbturn}
+\begin{DoxyCompactList}\small\item\em Nombre de tours qui sont passés depuis le début de la partie. \end{DoxyCompactList}\item 
+\hyperlink{classplayer}{player} $\ast$$\ast$ \hyperlink{classjeu_ae005d31d8935c2d9e7ddb53d25efcc31}{players}
+\begin{DoxyCompactList}\small\item\em Tableau de pointeurs vers tous les joueurs (classe player) \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{classjeu_ada4888da3a6c7036f47f47515f87a983}{playerids}
+\begin{DoxyCompactList}\small\item\em Tableau de tous les identifiants joueur. \end{DoxyCompactList}\item 
+std\+::multimap$<$ char, std\+::pair$<$ int, int $>$ $>$ \hyperlink{classjeu_abd8f4b8b02d750e302903f616e897ad0}{part\+\_\+plateau}
+\begin{DoxyCompactList}\small\item\em Map de toutes les cases particulières du plateau. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe jeu 
+
+Regroupe tous les éléments du jeu \+: le plateau, les joueurs, et les fonctions pour les coups.
+
+Librairies incluses \+:
+\begin{DoxyItemize}
+\item iostream
+\item \hyperlink{player_8h}{player.\+h}
+\item \hyperlink{plateau_8h}{plateau.\+h} 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classjeu_a55385a33ef40e0579eb3a3634566c4a8}\label{classjeu_a55385a33ef40e0579eb3a3634566c4a8}} 
+\index{jeu@{jeu}!````~jeu@{$\sim$jeu}}
+\index{````~jeu@{$\sim$jeu}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{$\sim$jeu()}{~jeu()}}
+{\footnotesize\ttfamily jeu\+::$\sim$jeu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur du jeu. 
+
+\mbox{\Hypertarget{classjeu_abc0e1ad9a05d57a06de111e9ccb3f8b9}\label{classjeu_abc0e1ad9a05d57a06de111e9ccb3f8b9}} 
+\index{jeu@{jeu}!jeu@{jeu}}
+\index{jeu@{jeu}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{jeu()}{jeu()}}
+{\footnotesize\ttfamily jeu\+::jeu (\begin{DoxyParamCaption}\item[{int}]{tp,  }\item[{int}]{nbp }\end{DoxyParamCaption})}
+
+
+
+Constructeur du jeu. 
+
+Constructeur de jeu qui est appelée depuis la fonction main. 
+\begin{DoxyParams}{Parameters}
+{\em tp} & La taille désirée du plateau. \\
+\hline
+{\em nbp} & Nombre de joueurs. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classjeu_a044947660d0990bd6869d3669306ba8c}\label{classjeu_a044947660d0990bd6869d3669306ba8c}} 
+\index{jeu@{jeu}!a@{a}}
+\index{a@{a}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{a()}{a()}}
+{\footnotesize\ttfamily void jeu\+::a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affichage des informations du tour. 
+
+\mbox{\Hypertarget{classjeu_a7da98d2c8eaccacc01abb6d25777a7a0}\label{classjeu_a7da98d2c8eaccacc01abb6d25777a7a0}} 
+\index{jeu@{jeu}!check\+\_\+win@{check\+\_\+win}}
+\index{check\+\_\+win@{check\+\_\+win}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{check\+\_\+win()}{check\_win()}}
+{\footnotesize\ttfamily bool jeu\+::check\+\_\+win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de vérifier si un joueur a gagné. 
+
+\mbox{\Hypertarget{classjeu_a5b18141ecb3ed6cad4e8116e8248b461}\label{classjeu_a5b18141ecb3ed6cad4e8116e8248b461}} 
+\index{jeu@{jeu}!menu@{menu}}
+\index{menu@{menu}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void jeu\+::menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Interface pour le menu. 
+
+\mbox{\Hypertarget{classjeu_ac71ae1e00668be38e0e9b1e2f890639d}\label{classjeu_ac71ae1e00668be38e0e9b1e2f890639d}} 
+\index{jeu@{jeu}!tour@{tour}}
+\index{tour@{tour}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{tour()}{tour()}}
+{\footnotesize\ttfamily void jeu\+::tour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant aux joueurs de faire un nouveau tour. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classjeu_a7bd7f0a6992c018ddc2cdf2a0c6e1930}\label{classjeu_a7bd7f0a6992c018ddc2cdf2a0c6e1930}} 
+\index{jeu@{jeu}!hav@{hav}}
+\index{hav@{hav}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{hav}{hav}}
+{\footnotesize\ttfamily \hyperlink{classplateau}{plateau}$\ast$ jeu\+::hav\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Le plateau en question. 
+
+\mbox{\Hypertarget{classjeu_a725c0616180898259dd472d009e844fc}\label{classjeu_a725c0616180898259dd472d009e844fc}} 
+\index{jeu@{jeu}!nb\+\_\+ia@{nb\+\_\+ia}}
+\index{nb\+\_\+ia@{nb\+\_\+ia}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{nb\+\_\+ia}{nb\_ia}}
+{\footnotesize\ttfamily char jeu\+::nb\+\_\+ia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+nombre d\textquotesingle{}IA à gérer 
+
+\mbox{\Hypertarget{classjeu_af5d010efc2e6dec9ea8da739bd5f19b5}\label{classjeu_af5d010efc2e6dec9ea8da739bd5f19b5}} 
+\index{jeu@{jeu}!nb\+\_\+players@{nb\+\_\+players}}
+\index{nb\+\_\+players@{nb\+\_\+players}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{nb\+\_\+players}{nb\_players}}
+{\footnotesize\ttfamily char jeu\+::nb\+\_\+players\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+nombre de joueurs pour le jeu 
+
+\mbox{\Hypertarget{classjeu_ae28d01ac3e91246e6269df4d62470913}\label{classjeu_ae28d01ac3e91246e6269df4d62470913}} 
+\index{jeu@{jeu}!nbturn@{nbturn}}
+\index{nbturn@{nbturn}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{nbturn}{nbturn}}
+{\footnotesize\ttfamily int jeu\+::nbturn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre de tours qui sont passés depuis le début de la partie. 
+
+\mbox{\Hypertarget{classjeu_abd8f4b8b02d750e302903f616e897ad0}\label{classjeu_abd8f4b8b02d750e302903f616e897ad0}} 
+\index{jeu@{jeu}!part\+\_\+plateau@{part\+\_\+plateau}}
+\index{part\+\_\+plateau@{part\+\_\+plateau}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{part\+\_\+plateau}{part\_plateau}}
+{\footnotesize\ttfamily std\+::multimap$<$char, std\+::pair$<$int,int$>$ $>$ jeu\+::part\+\_\+plateau\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Map de toutes les cases particulières du plateau. 
+
+\mbox{\Hypertarget{classjeu_ada4888da3a6c7036f47f47515f87a983}\label{classjeu_ada4888da3a6c7036f47f47515f87a983}} 
+\index{jeu@{jeu}!playerids@{playerids}}
+\index{playerids@{playerids}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{playerids}{playerids}}
+{\footnotesize\ttfamily char$\ast$ jeu\+::playerids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tableau de tous les identifiants joueur. 
+
+\mbox{\Hypertarget{classjeu_ae005d31d8935c2d9e7ddb53d25efcc31}\label{classjeu_ae005d31d8935c2d9e7ddb53d25efcc31}} 
+\index{jeu@{jeu}!players@{players}}
+\index{players@{players}!jeu@{jeu}}
+\subsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily \hyperlink{classplayer}{player}$\ast$$\ast$ jeu\+::players\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tableau de pointeurs vers tous les joueurs (classe player) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{jeu_8h}{jeu.\+h}\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/\hyperlink{jeu_8cpp}{jeu.\+cpp}\end{DoxyCompactItemize}

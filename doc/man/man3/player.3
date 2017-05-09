@@ -1,0 +1,248 @@
+.TH "player" 3 "Mon Apr 24 2017" "Havannah" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+player \- class joueur  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <player\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBplayer\fP ()"
+.br
+.RI "Constructeur vide\&. "
+.ti -1c
+.RI "\fB~player\fP ()"
+.br
+.RI "Destructeur par défaut\&. "
+.ti -1c
+.RI "char \fBreturnId\fP ()"
+.br
+.RI "Retour de l'identifiant joueur\&. "
+.ti -1c
+.RI "bool \fBreturnIa\fP ()"
+.br
+.RI "Retour de l'etat du joueur (humain ou non)\&. "
+.ti -1c
+.RI "void \fBnewid\fP (char t)"
+.br
+.RI "Réaffectation de l'identifiant joueur\&. "
+.ti -1c
+.RI "std::string \fBreturnNom\fP ()"
+.br
+.RI "Retour du nom du joueur\&. "
+.ti -1c
+.RI "void \fBajouter_coup\fP (std::pair< int, int > cap, int taille)"
+.br
+.RI "Ajout du coup dans la BDD joueur\&. "
+.ti -1c
+.RI "std::pair< std::pair< int, int >, char > \fBplacer_pion\fP ()"
+.br
+.RI "Demande du choix joueur pour son tour\&. "
+.ti -1c
+.RI "bool \fBest_voisin\fP (std::pair< int, int > point_orig, std::pair< int, int > point_nouv, int t)"
+.br
+.RI "Vérifie le voisinage d'une case\&. "
+.ti -1c
+.RI "bool \fBcheck_win\fP ()"
+.br
+.RI "Vérification de la victoire d'un joueur\&. "
+.ti -1c
+.RI "void \fBaffcoups\fP ()"
+.br
+.RI "Affichage des coups joueur\&. "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBnom\fP"
+.br
+.RI "Stocke le nom choisi par le joueur\&. "
+.ti -1c
+.RI "bool \fBia\fP"
+.br
+.RI "Sert à savoir si un joueur est une IA ou pas\&. "
+.ti -1c
+.RI "char \fBid\fP"
+.br
+.RI "Identificateur qui sert à différencier les joueur entre eux\&. "
+.ti -1c
+.RI "arbre< int, int > \fBcoups\fP"
+.br
+.RI "Stocke les coups du joueur au fur et à mesure de la progression du jeu\&. "
+.ti -1c
+.RI "vector< noeud< int, int > * > \fBvcoups\fP"
+.br
+.RI "Est un index de tous les noeuds contenus dans l'arbre\&. "
+.ti -1c
+.RI "vector< noeud< int, int > * > \fBfeuille\fP"
+.br
+.RI "Stocke tous les noeuds feuille de l'arbre\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+class joueur 
+
+La classe player sert à gérer toutes les infos du joueur lors du jeu\&. Permet de créer, détruire, stocker les coups, jouer, afficher l'état du joueur\&. Librairies incluses :
+.IP "\(bu" 2
+iostream
+.IP "\(bu" 2
+vector
+.IP "\(bu" 2
+list 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "player::player ()"
+
+.PP
+Constructeur vide\&. Il sert à créer un joueur en demandant un nom, un identifiant et en demandant si le joueur sera une IA ou pas\&.
+.PP
+Fonctionnement :
+.IP "1." 4
+On informe le joueur qu'on va créer son personnage dans le jeu
+.IP "2." 4
+On lui demande un nom ( via un getline() ):
+.IP "  \(bu" 4
+Tant qu'il ne fournit pas de nom, on redemande la saisie\&.
+.IP "  \(bu" 4
+On affecte ensuite le nom choisi à la variable nom\&.
+.PP
+
+.IP "3." 4
+On demande si il souhaite que ce personnage soit une IA ( via un getline() suivi d'un tolower() pour normaliser l'entrée utilisateur ):
+.IP "  \(bu" 4
+Si oui, on affecte le booléen ia à 1
+.PP
+
+.IP "4." 4
+On lui demande un identifiant entre 1 et 10 :
+.IP "  \(bu" 4
+Si il rentre un identifiant supèrieur, on ne gère pas
+.IP "  \(bu" 4
+Si l'entrée utilisateur est non comprise, on affecte la valeur 10 par défaut 
+.PP
+
+.PP
+
+.SS "player::~player ()"
+
+.PP
+Destructeur par défaut\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void player::affcoups ()"
+
+.PP
+Affichage des coups joueur\&. 
+.SS "void player::ajouter_coup (std::pair< int, int > cap, int taille)"
+
+.PP
+Ajout du coup dans la BDD joueur\&. Prends un coup en argument et le place dans le vector<> coups\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcap\fP Le coup à placer\&. 
+.br
+\fItaille\fP Taille du plateau (permet de déterminer la colonne max du coup)\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+La fonction ne retourne rien\&. 
+.RE
+.PP
+
+.SS "bool player::check_win ()"
+
+.PP
+Vérification de la victoire d'un joueur\&. 
+.SS "bool player::est_voisin (std::pair< int, int > point_orig, std::pair< int, int > point_nouv, int t)"
+
+.PP
+Vérifie le voisinage d'une case\&. Prends en argument 2 coordonnées x et y ainsi que la taille du plateau\&. Ensuite, vérifie si ceux ci sont voisins ou non selon leur place dans le plateau\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIpoint_orig\fP Le point de référence à partir duquel on vérifie le voisinage\&. 
+.br
+\fIpoint_nouv\fP Le point dont on veut vérifier la position\&. 
+.br
+\fIt\fP Taille du plateau (pour déterminer la forme du voisinage dans le tableau)\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+Un booléen permettant de savoir si les points sont voisins\&. 
+.RE
+.PP
+
+.SS "void player::newid (char t)\fC [inline]\fP"
+
+.PP
+Réaffectation de l'identifiant joueur\&. 
+.SS "std::pair< std::pair< int, int >, char > player::placer_pion ()"
+
+.PP
+Demande du choix joueur pour son tour\&. Demande au joueur sur quelle case il souhaite placer le pion, sans se soucier de la taille du plateau\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Une paire composée d'un identifiant, et de coordonnées x et y pour le placement sur le plateau\&. 
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBajouter_coup()\fP 
+.RE
+.PP
+
+.SS "bool player::returnIa ()\fC [inline]\fP"
+
+.PP
+Retour de l'etat du joueur (humain ou non)\&. 
+.SS "char player::returnId ()\fC [inline]\fP"
+
+.PP
+Retour de l'identifiant joueur\&. 
+.SS "std::string player::returnNom ()\fC [inline]\fP"
+
+.PP
+Retour du nom du joueur\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "arbre<int,int> player::coups\fC [private]\fP"
+
+.PP
+Stocke les coups du joueur au fur et à mesure de la progression du jeu\&. 
+.SS "vector<noeud<int,int>*> player::feuille\fC [private]\fP"
+
+.PP
+Stocke tous les noeuds feuille de l'arbre\&. 
+.SS "bool player::ia\fC [private]\fP"
+
+.PP
+Sert à savoir si un joueur est une IA ou pas\&. 
+.SS "char player::id\fC [private]\fP"
+
+.PP
+Identificateur qui sert à différencier les joueur entre eux\&. 
+.SS "std::string player::nom\fC [private]\fP"
+
+.PP
+Stocke le nom choisi par le joueur\&. 
+.SS "vector<noeud<int,int>*> player::vcoups\fC [private]\fP"
+
+.PP
+Est un index de tous les noeuds contenus dans l'arbre\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Havannah from the source code\&.

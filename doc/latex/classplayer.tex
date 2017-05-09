@@ -1,0 +1,293 @@
+\hypertarget{classplayer}{}\section{player Class Reference}
+\label{classplayer}\index{player@{player}}
+
+
+class joueur  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classplayer_a97de83bce15f880241f561b55b016b02}{player} ()
+\begin{DoxyCompactList}\small\item\em Constructeur vide. \end{DoxyCompactList}\item 
+\hyperlink{classplayer_aab5d2e47b80e0481f09ca0df8b823057}{$\sim$player} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut. \end{DoxyCompactList}\item 
+char \hyperlink{classplayer_a6e4d00a9bdc81a1c4bc7cc5aef766510}{return\+Id} ()
+\begin{DoxyCompactList}\small\item\em Retour de l\textquotesingle{}identifiant joueur. \end{DoxyCompactList}\item 
+bool \hyperlink{classplayer_ac9ddc8bf95e4b1fc87658a3d8426b394}{return\+Ia} ()
+\begin{DoxyCompactList}\small\item\em Retour de l\textquotesingle{}etat du joueur (humain ou non). \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_ab50915e2d1ce44e19a4a6ac9f34e165c}{newid} (char t)
+\begin{DoxyCompactList}\small\item\em Réaffectation de l\textquotesingle{}identifiant joueur. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classplayer_ada00e16c16ff0be00896b1f6df9a21de}{return\+Nom} ()
+\begin{DoxyCompactList}\small\item\em Retour du nom du joueur. \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_aec3e561bd70f63c9b1dd0614afc2971a}{ajouter\+\_\+coup} (std\+::pair$<$ int, int $>$ cap, int taille)
+\begin{DoxyCompactList}\small\item\em Ajout du coup dans la B\+DD joueur. \end{DoxyCompactList}\item 
+std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$ \hyperlink{classplayer_a34f3624d4410230ab77ce6ee7fb0a0df}{placer\+\_\+pion} ()
+\begin{DoxyCompactList}\small\item\em Demande du choix joueur pour son tour. \end{DoxyCompactList}\item 
+bool \hyperlink{classplayer_a24a75aa099e5a4eac97d3898fde40a3b}{est\+\_\+voisin} (std\+::pair$<$ int, int $>$ point\+\_\+orig, std\+::pair$<$ int, int $>$ point\+\_\+nouv, int t)
+\begin{DoxyCompactList}\small\item\em Vérifie le voisinage d\textquotesingle{}une case. \end{DoxyCompactList}\item 
+bool \hyperlink{classplayer_a5eddf905f6904f5737b4f36f7f0ab428}{check\+\_\+win} ()
+\begin{DoxyCompactList}\small\item\em Vérification de la victoire d\textquotesingle{}un joueur. \end{DoxyCompactList}\item 
+void \hyperlink{classplayer_a2590189e7416dc8a5cf2686a606f138b}{affcoups} ()
+\begin{DoxyCompactList}\small\item\em Affichage des coups joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classplayer_ae6c0f854d63dc4b938b52f10b4334dbc}{nom}
+\begin{DoxyCompactList}\small\item\em Stocke le nom choisi par le joueur. \end{DoxyCompactList}\item 
+bool \hyperlink{classplayer_ab5c7590da844e3e2128868820ab9ec45}{ia}
+\begin{DoxyCompactList}\small\item\em Sert à savoir si un joueur est une IA ou pas. \end{DoxyCompactList}\item 
+char \hyperlink{classplayer_a5862f005a5367e1b0dc19bdf2846fd34}{id}
+\begin{DoxyCompactList}\small\item\em Identificateur qui sert à différencier les joueur entre eux. \end{DoxyCompactList}\item 
+arbre$<$ int, int $>$ \hyperlink{classplayer_a5386c8bc522c5c0e39b1e071cf9ca37a}{coups}
+\begin{DoxyCompactList}\small\item\em Stocke les coups du joueur au fur et à mesure de la progression du jeu. \end{DoxyCompactList}\item 
+vector$<$ noeud$<$ int, int $>$ $\ast$ $>$ \hyperlink{classplayer_a577febe1e35c769385c8c7287df15939}{vcoups}
+\begin{DoxyCompactList}\small\item\em Est un index de tous les noeuds contenus dans l\textquotesingle{}arbre. \end{DoxyCompactList}\item 
+vector$<$ noeud$<$ int, int $>$ $\ast$ $>$ \hyperlink{classplayer_aa16931420b88ef2fc8ebe28a6bd26b1b}{feuille}
+\begin{DoxyCompactList}\small\item\em Stocke tous les noeuds feuille de l\textquotesingle{}arbre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class joueur 
+
+La classe player sert à gérer toutes les infos du joueur lors du jeu. Permet de créer, détruire, stocker les coups, jouer, afficher l\textquotesingle{}état du joueur. Librairies incluses \+:
+\begin{DoxyItemize}
+\item iostream
+\item vector
+\item list 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplayer_a97de83bce15f880241f561b55b016b02}\label{classplayer_a97de83bce15f880241f561b55b016b02}} 
+\index{player@{player}!player@{player}}
+\index{player@{player}!player@{player}}
+\subsubsection{\texorpdfstring{player()}{player()}}
+{\footnotesize\ttfamily player\+::player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur vide. 
+
+Il sert à créer un joueur en demandant un nom, un identifiant et en demandant si le joueur sera une IA ou pas.
+
+Fonctionnement \+:
+\begin{DoxyEnumerate}
+\item On informe le joueur qu\textquotesingle{}on va créer son personnage dans le jeu
+\item On lui demande un nom ( via un getline() )\+:
+\begin{DoxyItemize}
+\item Tant qu\textquotesingle{}il ne fournit pas de nom, on redemande la saisie.
+\item On affecte ensuite le nom choisi à la variable nom.
+\end{DoxyItemize}
+\item On demande si il souhaite que ce personnage soit une IA ( via un getline() suivi d\textquotesingle{}un tolower() pour normaliser l\textquotesingle{}entrée utilisateur )\+:
+\begin{DoxyItemize}
+\item Si oui, on affecte le booléen ia à 1
+\end{DoxyItemize}
+\item On lui demande un identifiant entre 1 et 10 \+:
+\begin{DoxyItemize}
+\item Si il rentre un identifiant supèrieur, on ne gère pas
+\item Si l\textquotesingle{}entrée utilisateur est non comprise, on affecte la valeur 10 par défaut 
+\end{DoxyItemize}
+\end{DoxyEnumerate}\mbox{\Hypertarget{classplayer_aab5d2e47b80e0481f09ca0df8b823057}\label{classplayer_aab5d2e47b80e0481f09ca0df8b823057}} 
+\index{player@{player}!````~player@{$\sim$player}}
+\index{````~player@{$\sim$player}!player@{player}}
+\subsubsection{\texorpdfstring{$\sim$player()}{~player()}}
+{\footnotesize\ttfamily player\+::$\sim$player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur par défaut. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayer_a2590189e7416dc8a5cf2686a606f138b}\label{classplayer_a2590189e7416dc8a5cf2686a606f138b}} 
+\index{player@{player}!affcoups@{affcoups}}
+\index{affcoups@{affcoups}!player@{player}}
+\subsubsection{\texorpdfstring{affcoups()}{affcoups()}}
+{\footnotesize\ttfamily void player\+::affcoups (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affichage des coups joueur. 
+
+\mbox{\Hypertarget{classplayer_aec3e561bd70f63c9b1dd0614afc2971a}\label{classplayer_aec3e561bd70f63c9b1dd0614afc2971a}} 
+\index{player@{player}!ajouter\+\_\+coup@{ajouter\+\_\+coup}}
+\index{ajouter\+\_\+coup@{ajouter\+\_\+coup}!player@{player}}
+\subsubsection{\texorpdfstring{ajouter\+\_\+coup()}{ajouter\_coup()}}
+{\footnotesize\ttfamily void player\+::ajouter\+\_\+coup (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{cap,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Ajout du coup dans la B\+DD joueur. 
+
+Prends un coup en argument et le place dans le vector$<$$>$ coups. 
+\begin{DoxyParams}{Parameters}
+{\em cap} & Le coup à placer. \\
+\hline
+{\em taille} & Taille du plateau (permet de déterminer la colonne max du coup). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La fonction ne retourne rien. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classplayer_a5eddf905f6904f5737b4f36f7f0ab428}\label{classplayer_a5eddf905f6904f5737b4f36f7f0ab428}} 
+\index{player@{player}!check\+\_\+win@{check\+\_\+win}}
+\index{check\+\_\+win@{check\+\_\+win}!player@{player}}
+\subsubsection{\texorpdfstring{check\+\_\+win()}{check\_win()}}
+{\footnotesize\ttfamily bool player\+::check\+\_\+win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Vérification de la victoire d\textquotesingle{}un joueur. 
+
+\mbox{\Hypertarget{classplayer_a24a75aa099e5a4eac97d3898fde40a3b}\label{classplayer_a24a75aa099e5a4eac97d3898fde40a3b}} 
+\index{player@{player}!est\+\_\+voisin@{est\+\_\+voisin}}
+\index{est\+\_\+voisin@{est\+\_\+voisin}!player@{player}}
+\subsubsection{\texorpdfstring{est\+\_\+voisin()}{est\_voisin()}}
+{\footnotesize\ttfamily bool player\+::est\+\_\+voisin (\begin{DoxyParamCaption}\item[{std\+::pair$<$ int, int $>$}]{point\+\_\+orig,  }\item[{std\+::pair$<$ int, int $>$}]{point\+\_\+nouv,  }\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Vérifie le voisinage d\textquotesingle{}une case. 
+
+Prends en argument 2 coordonnées x et y ainsi que la taille du plateau. Ensuite, vérifie si ceux ci sont voisins ou non selon leur place dans le plateau. 
+\begin{DoxyParams}{Parameters}
+{\em point\+\_\+orig} & Le point de référence à partir duquel on vérifie le voisinage. \\
+\hline
+{\em point\+\_\+nouv} & Le point dont on veut vérifier la position. \\
+\hline
+{\em t} & Taille du plateau (pour déterminer la forme du voisinage dans le tableau). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un booléen permettant de savoir si les points sont voisins. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classplayer_ab50915e2d1ce44e19a4a6ac9f34e165c}\label{classplayer_ab50915e2d1ce44e19a4a6ac9f34e165c}} 
+\index{player@{player}!newid@{newid}}
+\index{newid@{newid}!player@{player}}
+\subsubsection{\texorpdfstring{newid()}{newid()}}
+{\footnotesize\ttfamily void player\+::newid (\begin{DoxyParamCaption}\item[{char}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Réaffectation de l\textquotesingle{}identifiant joueur. 
+
+\mbox{\Hypertarget{classplayer_a34f3624d4410230ab77ce6ee7fb0a0df}\label{classplayer_a34f3624d4410230ab77ce6ee7fb0a0df}} 
+\index{player@{player}!placer\+\_\+pion@{placer\+\_\+pion}}
+\index{placer\+\_\+pion@{placer\+\_\+pion}!player@{player}}
+\subsubsection{\texorpdfstring{placer\+\_\+pion()}{placer\_pion()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$ player\+::placer\+\_\+pion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Demande du choix joueur pour son tour. 
+
+Demande au joueur sur quelle case il souhaite placer le pion, sans se soucier de la taille du plateau. \begin{DoxyReturn}{Returns}
+Une paire composée d\textquotesingle{}un identifiant, et de coordonnées x et y pour le placement sur le plateau. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classplayer_aec3e561bd70f63c9b1dd0614afc2971a}{ajouter\+\_\+coup()} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classplayer_ac9ddc8bf95e4b1fc87658a3d8426b394}\label{classplayer_ac9ddc8bf95e4b1fc87658a3d8426b394}} 
+\index{player@{player}!return\+Ia@{return\+Ia}}
+\index{return\+Ia@{return\+Ia}!player@{player}}
+\subsubsection{\texorpdfstring{return\+Ia()}{returnIa()}}
+{\footnotesize\ttfamily bool player\+::return\+Ia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retour de l\textquotesingle{}etat du joueur (humain ou non). 
+
+\mbox{\Hypertarget{classplayer_a6e4d00a9bdc81a1c4bc7cc5aef766510}\label{classplayer_a6e4d00a9bdc81a1c4bc7cc5aef766510}} 
+\index{player@{player}!return\+Id@{return\+Id}}
+\index{return\+Id@{return\+Id}!player@{player}}
+\subsubsection{\texorpdfstring{return\+Id()}{returnId()}}
+{\footnotesize\ttfamily char player\+::return\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retour de l\textquotesingle{}identifiant joueur. 
+
+\mbox{\Hypertarget{classplayer_ada00e16c16ff0be00896b1f6df9a21de}\label{classplayer_ada00e16c16ff0be00896b1f6df9a21de}} 
+\index{player@{player}!return\+Nom@{return\+Nom}}
+\index{return\+Nom@{return\+Nom}!player@{player}}
+\subsubsection{\texorpdfstring{return\+Nom()}{returnNom()}}
+{\footnotesize\ttfamily std\+::string player\+::return\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retour du nom du joueur. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classplayer_a5386c8bc522c5c0e39b1e071cf9ca37a}\label{classplayer_a5386c8bc522c5c0e39b1e071cf9ca37a}} 
+\index{player@{player}!coups@{coups}}
+\index{coups@{coups}!player@{player}}
+\subsubsection{\texorpdfstring{coups}{coups}}
+{\footnotesize\ttfamily arbre$<$int,int$>$ player\+::coups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke les coups du joueur au fur et à mesure de la progression du jeu. 
+
+\mbox{\Hypertarget{classplayer_aa16931420b88ef2fc8ebe28a6bd26b1b}\label{classplayer_aa16931420b88ef2fc8ebe28a6bd26b1b}} 
+\index{player@{player}!feuille@{feuille}}
+\index{feuille@{feuille}!player@{player}}
+\subsubsection{\texorpdfstring{feuille}{feuille}}
+{\footnotesize\ttfamily vector$<$noeud$<$int,int$>$$\ast$$>$ player\+::feuille\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke tous les noeuds feuille de l\textquotesingle{}arbre. 
+
+\mbox{\Hypertarget{classplayer_ab5c7590da844e3e2128868820ab9ec45}\label{classplayer_ab5c7590da844e3e2128868820ab9ec45}} 
+\index{player@{player}!ia@{ia}}
+\index{ia@{ia}!player@{player}}
+\subsubsection{\texorpdfstring{ia}{ia}}
+{\footnotesize\ttfamily bool player\+::ia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sert à savoir si un joueur est une IA ou pas. 
+
+\mbox{\Hypertarget{classplayer_a5862f005a5367e1b0dc19bdf2846fd34}\label{classplayer_a5862f005a5367e1b0dc19bdf2846fd34}} 
+\index{player@{player}!id@{id}}
+\index{id@{id}!player@{player}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily char player\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identificateur qui sert à différencier les joueur entre eux. 
+
+\mbox{\Hypertarget{classplayer_ae6c0f854d63dc4b938b52f10b4334dbc}\label{classplayer_ae6c0f854d63dc4b938b52f10b4334dbc}} 
+\index{player@{player}!nom@{nom}}
+\index{nom@{nom}!player@{player}}
+\subsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily std\+::string player\+::nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Stocke le nom choisi par le joueur. 
+
+\mbox{\Hypertarget{classplayer_a577febe1e35c769385c8c7287df15939}\label{classplayer_a577febe1e35c769385c8c7287df15939}} 
+\index{player@{player}!vcoups@{vcoups}}
+\index{vcoups@{vcoups}!player@{player}}
+\subsubsection{\texorpdfstring{vcoups}{vcoups}}
+{\footnotesize\ttfamily vector$<$noeud$<$int,int$>$$\ast$$>$ player\+::vcoups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Est un index de tous les noeuds contenus dans l\textquotesingle{}arbre. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{player_8h}{player.\+h}\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/\hyperlink{player_8cpp}{player.\+cpp}\end{DoxyCompactItemize}

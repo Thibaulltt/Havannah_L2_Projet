@@ -1,0 +1,324 @@
+.TH "plateau" 3 "Mon Apr 24 2017" "Havannah" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+plateau \- classe plateau  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <plateau\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBplateau\fP ()"
+.br
+.RI "Constructeur par défaut\&. "
+.ti -1c
+.RI "\fB~plateau\fP ()"
+.br
+.RI "Destructeur du plateau\&. "
+.ti -1c
+.RI "\fBplateau\fP (int n)"
+.br
+.RI "Constructeur avec arguments\&. "
+.ti -1c
+.RI "void \fBafficher\fP (char *p)"
+.br
+.RI "Affichage plateau avec des hexagones\&. "
+.ti -1c
+.RI "void \fBafficher2\fP (char *p)"
+.br
+.RI "affichage du plateau avec des losanges "
+.ti -1c
+.RI "void \fBaff_contenu\fP (int cont, int nb, char *p)"
+.br
+.RI "Affiche contenu d'une case 'n' fois\&. "
+.ti -1c
+.RI "int \fBr_der_ligne\fP ()"
+.br
+.RI "Donne la valeur de la dernière ligne\&. "
+.ti -1c
+.RI "int \fBRtaillecote\fP ()"
+.br
+.RI "Donne la valeur de la taille demandée par le joueur\&. "
+.ti -1c
+.RI "void \fBaff_bas_hexa\fP (int a, bool e_l, int sep, bool p_l, char *p)"
+.br
+.RI "Affichage bas hexa normaux\&. "
+.ti -1c
+.RI "void \fBaff_haut_hexa\fP (int a, int sep, bool e_l, bool p_l, bool l_l, char *p)"
+.br
+.RI "Affichage bas hexa normaux\&. "
+.ti -1c
+.RI "void \fBaff_bas_hexa2\fP (int a, bool e_l, int sep, bool p_l, char *p)"
+.br
+.RI "Affichage bas hexa en losange\&. "
+.ti -1c
+.RI "void \fBaff_haut_hexa2\fP (int a, int sep, bool e_l, bool p_l, bool l_l, char *p)"
+.br
+.RI "Affichage haut hexa en losange\&. "
+.ti -1c
+.RI "std::multimap< char, std::pair< int, int > > \fBretParticuliers\fP ()"
+.br
+.RI "Retourne les coordonnées des pions aux coins et aux côtés\&. "
+.ti -1c
+.RI "std::pair< int, int > \fBplacerpion\fP (std::pair< std::pair< int, int >, char >)"
+.br
+.RI "Permet de placer un pion ( = affecter une valeur à une case) "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBtaillecote\fP"
+.br
+.RI "Taille d'un côté du plateau\&. "
+.ti -1c
+.RI "int \fBder_ligne\fP"
+.br
+.RI "Indice de la dernière ligne\&. "
+.ti -1c
+.RI "vector< int > * \fBhexa\fP"
+.br
+.RI "La structure de données pour le jeu\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+classe plateau 
+
+La classe contenant tout le plateau\&. Interagit fortement avec la classe jeu, et à moindre envergure avec la classe player\&.
+.PP
+Librairies incluses :
+.IP "\(bu" 2
+iostream
+.IP "\(bu" 2
+vector
+.IP "\(bu" 2
+map 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "plateau::plateau ()"
+
+.PP
+Constructeur par défaut\&. Demande une taille de plateau au joueur et ensuite crée un plateau de la taille demandée, avec des cases contenant la valeur minimale des entiers dans C++ (-2147483648) pour signifier que la case est vide\&. 
+.SS "plateau::~plateau ()"
+
+.PP
+Destructeur du plateau\&. 
+.SS "plateau::plateau (int n)"
+
+.PP
+Constructeur avec arguments\&. Permet à la classe jeu de créer un plateau sans pour autant demander au joueur quoi que ce soit\&. La taille passée en argument sera donc déterminée par la classe jeu\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIn\fP taille demandée pour le plateau\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void plateau::aff_bas_hexa (int a, bool e_l, int sep, bool p_l, char * p)"
+
+.PP
+Affichage bas hexa normaux\&. Affiche le bas des hexagones\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP indice de la ligne de l'hexa a afficher 
+.br
+\fIe_l\fP est-ce que l'on est entre 2 lignes ? si oui, afficher des underscore 
+.br
+\fIsep\fP le nombre d'espaces à mettre avant chaque ligne (x4) 
+.br
+\fIp_l\fP sert à déterminer si on est sur la première ligne de la grille\&. ce booléen permet d'enlever un des appels de la fonction et de rajouter une ligne pour rien 
+.br
+\fIp\fP les identifiants joueurs 
+.RE
+.PP
+
+.SS "void plateau::aff_bas_hexa2 (int a, bool e_l, int sep, bool p_l, char * p)"
+
+.PP
+Affichage bas hexa en losange\&. Affiche le bas des hexagones\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP indice de la ligne de l'hexa a afficher 
+.br
+\fIe_l\fP est-ce que l'on est entre 2 lignes ? si oui, afficher des underscore 
+.br
+\fIsep\fP le nombre d'espaces à mettre avant chaque ligne (x4) 
+.br
+\fIp_l\fP sert à déterminer si on est sur la première ligne de la grille\&. ce booléen permet d'enlever un des appels de la fonction et de rajouter une ligne pour rien 
+.br
+\fIp\fP les identifiants joueurs 
+.RE
+.PP
+
+.SS "void plateau::aff_contenu (int cont, int nb, char * p)"
+
+.PP
+Affiche contenu d'une case 'n' fois\&. Permet d'afficher le contenu (l'identifiant qui est contenu dans la case) un nombre de fois donné par la fonction \fBaff_bas_hexa()\fP, \fBaff_bas_hexa2()\fP, \fBaff_haut_hexa()\fP, et \fBaff_haut_hexa2()\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIcont\fP Le contenu de la case en question 
+.br
+\fInb\fP Le nombre de fois qu'on souhaite afficher les caractères 
+.br
+\fIp\fP Les identifiants joueur pour savoir quel caractère afficher 
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBaff_bas_hexa()\fP, \fBaff_bas_hexa2()\fP, \fBaff_haut_hexa()\fP and \fBaff_haut_hexa2()\fP 
+.RE
+.PP
+
+.SS "void plateau::aff_haut_hexa (int a, int sep, bool e_l, bool p_l, bool l_l, char * p)"
+
+.PP
+Affichage bas hexa normaux\&. Haut de l'hexagone : 
+.PP
+.nf
+
+  ____      = Ligne 1 (necessaire seulement pour le haut de la grille)
+ /    \\     = Ligne 2
+/      \\    = Ligne 3
+.fi
+.PP
+ 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP indice de la ligne de l'hexa a afficher 
+.br
+\fIsep\fP le nombre d'espaces à mettre avant chaque ligne (x6) 
+.br
+\fIe_l\fP est-ce que l'on est entre 2 lignes ? si oui, afficher des underscore 
+.br
+\fIp_l\fP sert à déterminer si on est sur la première ligne de la grille\&. ce booléen permet d'enlever un des appels de la fonction et de rajouter une ligne pour rien 
+.br
+\fIl_l\fP determine si on est en derniere ligne 
+.br
+\fIp\fP donne les player id 
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBafficher()\fP 
+.RE
+.PP
+
+.SS "void plateau::aff_haut_hexa2 (int a, int sep, bool e_l, bool p_l, bool l_l, char * p)"
+
+.PP
+Affichage haut hexa en losange\&. Haut de l'hexagone : 
+.PP
+.nf
+
+        = Ligne 1 (necessaire seulement pour le haut de la grille)
+ /\\     = Ligne 2
+/  \\    = Ligne 3
+.fi
+.PP
+ 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP indice de la ligne de l'hexa a afficher 
+.br
+\fIe_l\fP est-ce que l'on est entre 2 lignes ? si oui, afficher des underscore 
+.br
+\fIsep\fP le nombre d'espaces à mettre avant chaque ligne (x6) 
+.br
+\fIp_l\fP sert à déterminer si on est sur la première ligne de la grille\&. ce booléen permet d'enlever un des appels de la fonction et de rajouter une ligne pour rien 
+.br
+\fIl_l\fP determine si on est en derniere ligne 
+.br
+\fIp\fP donne les player id 
+.RE
+.PP
+
+.SS "void plateau::afficher (char * p)"
+
+.PP
+Affichage plateau avec des hexagones\&. Cette visualisation du plateau est une visualisation en hexagone, donnant une vision facile de l'état du plateau\&. En revanche, celle-ci est assez compressée en hauteur\&. Cette méthode contient 2 étapes :
+.IP "1." 4
+On va faire la première partie de l'affichage des lignes, avant que l'on atteigne la ligne du milieu de la grille (qui est, par ailleurs, la plus longue)\&. Le haut des haxagones sera donc affiché avec le fonction \fBaff_haut_hexa()\fP
+.IP "2." 4
+Pareil que la partie d'avant, mais pour le bas du plateau, avec la fonction \fBaff_bas_hexa()\fP  
+.PP
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp\fP Les identifiants joueur pour que l'on puisse afficher leur cases avec les identifiants choisis auparavant\&. 
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBaff_haut_hexa()\fP and \fBaff_bas_hexa()\fP 
+.RE
+.PP
+
+.SS "void plateau::afficher2 (char * p)"
+
+.PP
+affichage du plateau avec des losanges Les losanges représentent les hexagones\&. Cette visualisation permet de voir le plateau de manière plus compacte\&. Cette méthode contient 2 étapes :
+.IP "1." 4
+On va faire la première partie de l'affichage des lignes, avant que l'on atteigne la ligne du milieu de la grille (qui est, par ailleurs, la plus longue)\&. Le haut des haxagones sera donc affiché avec le fonction \fBaff_haut_hexa2()\fP
+.IP "2." 4
+Pareil que la partie d'avant, mais pour le bas du plateau, avec la fonction \fBaff_bas_hexa2()\fP  
+.PP
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp\fP Les identifiants joueur pour que l'on puisse afficher leur cases avec les identifiants choisis auparavant\&. 
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBaff_haut_hexa2()\fP and \fBaff_bas_hexa2()\fP 
+.RE
+.PP
+
+.SS "std::pair< int, int > plateau::placerpion (std::pair< std::pair< int, int >, char > choix_joueur)"
+
+.PP
+Permet de placer un pion ( = affecter une valeur à une case) 
+.SS "int plateau::r_der_ligne ()\fC [inline]\fP"
+
+.PP
+Donne la valeur de la dernière ligne\&. 
+.SS "std::multimap< char, std::pair< int, int > > plateau::retParticuliers ()"
+
+.PP
+Retourne les coordonnées des pions aux coins et aux côtés\&. Permet de savoir quels cases sont aux coins pour pouvoir vérifier si le joueur 
+.SS "int plateau::Rtaillecote ()\fC [inline]\fP"
+
+.PP
+Donne la valeur de la taille demandée par le joueur\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "int plateau::der_ligne\fC [private]\fP"
+
+.PP
+Indice de la dernière ligne\&. 
+.SS "vector<int>* plateau::hexa\fC [private]\fP"
+
+.PP
+La structure de données pour le jeu\&. 
+.SS "int plateau::taillecote\fC [private]\fP"
+
+.PP
+Taille d'un côté du plateau\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Havannah from the source code\&.

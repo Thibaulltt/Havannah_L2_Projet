@@ -1,0 +1,157 @@
+.TH "jeu" 3 "Mon Apr 24 2017" "Havannah" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+jeu \- classe jeu  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <jeu\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~jeu\fP ()"
+.br
+.RI "Destructeur du jeu\&. "
+.ti -1c
+.RI "\fBjeu\fP (int tp, int nbp)"
+.br
+.RI "Constructeur du jeu\&. "
+.ti -1c
+.RI "void \fBmenu\fP ()"
+.br
+.RI "Interface pour le menu\&. "
+.ti -1c
+.RI "void \fBa\fP ()"
+.br
+.RI "Affichage des informations du tour\&. "
+.ti -1c
+.RI "void \fBtour\fP ()"
+.br
+.RI "Fonction permettant aux joueurs de faire un nouveau tour\&. "
+.ti -1c
+.RI "bool \fBcheck_win\fP ()"
+.br
+.RI "Fonction permettant de vérifier si un joueur a gagné\&. "
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBplateau\fP * \fBhav\fP"
+.br
+.RI "Le plateau en question\&. "
+.ti -1c
+.RI "char \fBnb_players\fP"
+.br
+.RI "nombre de joueurs pour le jeu "
+.ti -1c
+.RI "char \fBnb_ia\fP"
+.br
+.RI "nombre d'IA à gérer "
+.ti -1c
+.RI "int \fBnbturn\fP"
+.br
+.RI "Nombre de tours qui sont passés depuis le début de la partie\&. "
+.ti -1c
+.RI "\fBplayer\fP ** \fBplayers\fP"
+.br
+.RI "Tableau de pointeurs vers tous les joueurs (classe player) "
+.ti -1c
+.RI "char * \fBplayerids\fP"
+.br
+.RI "Tableau de tous les identifiants joueur\&. "
+.ti -1c
+.RI "std::multimap< char, std::pair< int, int > > \fBpart_plateau\fP"
+.br
+.RI "Map de toutes les cases particulières du plateau\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+classe jeu 
+
+Regroupe tous les éléments du jeu : le plateau, les joueurs, et les fonctions pour les coups\&.
+.PP
+Librairies incluses :
+.IP "\(bu" 2
+iostream
+.IP "\(bu" 2
+\fBplayer\&.h\fP
+.IP "\(bu" 2
+\fBplateau\&.h\fP 
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "jeu::~jeu ()"
+
+.PP
+Destructeur du jeu\&. 
+.SS "jeu::jeu (int tp, int nbp)"
+
+.PP
+Constructeur du jeu\&. Constructeur de jeu qui est appelée depuis la fonction main\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItp\fP La taille désirée du plateau\&. 
+.br
+\fInbp\fP Nombre de joueurs\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void jeu::a ()"
+
+.PP
+Affichage des informations du tour\&. 
+.SS "bool jeu::check_win ()"
+
+.PP
+Fonction permettant de vérifier si un joueur a gagné\&. 
+.SS "void jeu::menu ()"
+
+.PP
+Interface pour le menu\&. 
+.SS "void jeu::tour ()"
+
+.PP
+Fonction permettant aux joueurs de faire un nouveau tour\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBplateau\fP* jeu::hav\fC [private]\fP"
+
+.PP
+Le plateau en question\&. 
+.SS "char jeu::nb_ia\fC [private]\fP"
+
+.PP
+nombre d'IA à gérer 
+.SS "char jeu::nb_players\fC [private]\fP"
+
+.PP
+nombre de joueurs pour le jeu 
+.SS "int jeu::nbturn\fC [private]\fP"
+
+.PP
+Nombre de tours qui sont passés depuis le début de la partie\&. 
+.SS "std::multimap<char, std::pair<int,int> > jeu::part_plateau\fC [private]\fP"
+
+.PP
+Map de toutes les cases particulières du plateau\&. 
+.SS "char* jeu::playerids\fC [private]\fP"
+
+.PP
+Tableau de tous les identifiants joueur\&. 
+.SS "\fBplayer\fP** jeu::players\fC [private]\fP"
+
+.PP
+Tableau de pointeurs vers tous les joueurs (classe player) 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Havannah from the source code\&.

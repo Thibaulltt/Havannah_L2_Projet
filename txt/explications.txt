@@ -1,0 +1,24 @@
+Explications sur les algorithmes & le choix des représentations de la grille
+============================================================================
+
+Pour un hexagone régulier de côté 'n', on doit avoir '2n-1' colonnes et lignes. En effet si l'on prends un hexagone de côté 3 : 
+
+    <-->
+  <--><-->
+<--><--><-->
+  <--><-->
+<--><--><-->
+  <--><-->
+<  ><--><-->
+  <--><-->
+    <-->
+
+On le représente dans un tableau comme ceci :
+
+|--|--|--|--|--|
+|--|--|--|--|--|
+|--|--|--|--|--|
+|  |--|--|--|  |
+|  |  |--|  |  |
+
+Donc les cases qui sont vides divent etre initialisées à une valeur particulière dans le tableau
