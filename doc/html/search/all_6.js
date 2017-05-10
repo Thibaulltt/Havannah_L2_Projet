@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ia',['ia',['../classplayer.html#ab5c7590da844e3e2128868820ab9ec45',1,'player']]],
-  ['id',['id',['../classplayer.html#a5862f005a5367e1b0dc19bdf2846fd34',1,'player']]]
+  ['gettaille',['getTaille',['../classplateau.html#a125f7eafbef231cef7db62eb5e2ab94b',1,'plateau']]],
+  ['gettaillereelle',['getTailleReelle',['../classplateau.html#a45e938ee9402b3d7a0b6eeb4b08557f7',1,'plateau']]]
 ];

@@ -1,0 +1,246 @@
+\begin{theindex}
+
+  \item {/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/arbre.\+h}, 
+		\hyperpage{29}
+  \item {/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/jeu.\+h}, 
+		\hyperpage{29}
+  \item {/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/noeud.\+h}, 
+		\hyperpage{29}
+  \item {/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/plateau.\+h}, 
+		\hyperpage{30}
+  \item {/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/player.\+h}, 
+		\hyperpage{30}
+  \item {$\sim$arbre}
+    \subitem {arbre}, \hyperpage{6}
+  \item {$\sim$jeu}
+    \subitem {jeu}, \hyperpage{8}
+  \item {$\sim$noeud}
+    \subitem {noeud}, \hyperpage{12}
+  \item {$\sim$plateau}
+    \subitem {plateau}, \hyperpage{16}
+  \item {$\sim$player}
+    \subitem {player}, \hyperpage{24}
+
+  \indexspace
+
+  \item {a}
+    \subitem {jeu}, \hyperpage{9}
+  \item {aff}
+    \subitem {noeud}, \hyperpage{12}
+  \item {aff\+\_\+bas\+\_\+hexa}
+    \subitem {plateau}, \hyperpage{16}
+  \item {aff\+\_\+bas\+\_\+hexa2}
+    \subitem {plateau}, \hyperpage{17}
+  \item {aff\+\_\+contenu}
+    \subitem {plateau}, \hyperpage{17}
+  \item {aff\+\_\+haut\+\_\+hexa}
+    \subitem {plateau}, \hyperpage{18}
+  \item {aff\+\_\+haut\+\_\+hexa2}
+    \subitem {plateau}, \hyperpage{19}
+  \item {affcoups}
+    \subitem {player}, \hyperpage{25}
+  \item {afficher}
+    \subitem {plateau}, \hyperpage{19}
+  \item {afficher2}
+    \subitem {plateau}, \hyperpage{20}
+  \item {ajouter\+\_\+noeud}
+    \subitem {arbre}, \hyperpage{6}
+  \item {arbre}
+    \subitem {$\sim$arbre}, \hyperpage{6}
+    \subitem {ajouter\+\_\+noeud}, \hyperpage{6}
+    \subitem {arbre}, \hyperpage{5, 6}
+    \subitem {find}, \hyperpage{6}
+    \subitem {racine}, \hyperpage{7}
+    \subitem {voir\+Pere}, \hyperpage{7}
+  \item {arbre$<$ T, U $>$}, \hyperpage{5}
+
+  \indexspace
+
+  \item {check\+\_\+win}
+    \subitem {jeu}, \hyperpage{9}
+    \subitem {plateau}, \hyperpage{20}
+    \subitem {player}, \hyperpage{25}
+
+  \indexspace
+
+  \item {der\+\_\+ligne}
+    \subitem {plateau}, \hyperpage{22}
+
+  \indexspace
+
+  \item {end\+Game}
+    \subitem {plateau}, \hyperpage{15}
+  \item {est\+\_\+voisin}
+    \subitem {player}, \hyperpage{25}
+
+  \indexspace
+
+  \item {filsgauche}
+    \subitem {noeud}, \hyperpage{13}
+  \item {find}
+    \subitem {arbre}, \hyperpage{6}
+  \item {find\+\_\+in\+\_\+node\+\_\+vector}
+    \subitem {plateau}, \hyperpage{20}
+  \item {freredroit}
+    \subitem {noeud}, \hyperpage{13}
+
+  \indexspace
+
+  \item {get\+Taille}
+    \subitem {plateau}, \hyperpage{20}
+  \item {get\+Taille\+Reelle}
+    \subitem {plateau}, \hyperpage{21}
+
+  \indexspace
+
+  \item {hav}
+    \subitem {jeu}, \hyperpage{10}
+  \item {hexa}
+    \subitem {plateau}, \hyperpage{22}
+
+  \indexspace
+
+  \item {ia}
+    \subitem {player}, \hyperpage{27}
+  \item {id}
+    \subitem {player}, \hyperpage{27}
+  \item {info}
+    \subitem {noeud}, \hyperpage{13}
+
+  \indexspace
+
+  \item {jeu}, \hyperpage{7}
+    \subitem {$\sim$jeu}, \hyperpage{8}
+    \subitem {a}, \hyperpage{9}
+    \subitem {check\+\_\+win}, \hyperpage{9}
+    \subitem {hav}, \hyperpage{10}
+    \subitem {jeu}, \hyperpage{9}
+    \subitem {menu}, \hyperpage{9}
+    \subitem {nb\+\_\+ia}, \hyperpage{10}
+    \subitem {nb\+\_\+players}, \hyperpage{10}
+    \subitem {nbturn}, \hyperpage{10}
+    \subitem {part\+\_\+plateau}, \hyperpage{10}
+    \subitem {playerids}, \hyperpage{10}
+    \subitem {players}, \hyperpage{11}
+    \subitem {tour}, \hyperpage{9}
+
+  \indexspace
+
+  \item {menu}
+    \subitem {jeu}, \hyperpage{9}
+
+  \indexspace
+
+  \item {nb\+\_\+ia}
+    \subitem {jeu}, \hyperpage{10}
+  \item {nb\+\_\+players}
+    \subitem {jeu}, \hyperpage{10}
+  \item {nbturn}
+    \subitem {jeu}, \hyperpage{10}
+  \item {newid}
+    \subitem {player}, \hyperpage{25}
+  \item {noeud}
+    \subitem {$\sim$noeud}, \hyperpage{12}
+    \subitem {aff}, \hyperpage{12}
+    \subitem {filsgauche}, \hyperpage{13}
+    \subitem {freredroit}, \hyperpage{13}
+    \subitem {info}, \hyperpage{13}
+    \subitem {noeud}, \hyperpage{12}
+    \subitem {operator==}, \hyperpage{13}
+    \subitem {pere}, \hyperpage{13}
+  \item {noeud$<$ T, U $>$}, \hyperpage{11}
+  \item {nom}
+    \subitem {player}, \hyperpage{27}
+
+  \indexspace
+
+  \item {operator==}
+    \subitem {noeud}, \hyperpage{13}
+
+  \indexspace
+
+  \item {part\+\_\+plateau}
+    \subitem {jeu}, \hyperpage{10}
+  \item {pere}
+    \subitem {noeud}, \hyperpage{13}
+  \item {placer\+\_\+pion}
+    \subitem {player}, \hyperpage{26}
+  \item {placerpion}
+    \subitem {plateau}, \hyperpage{21}
+  \item {plateau}, \hyperpage{14}
+    \subitem {$\sim$plateau}, \hyperpage{16}
+    \subitem {aff\+\_\+bas\+\_\+hexa}, \hyperpage{16}
+    \subitem {aff\+\_\+bas\+\_\+hexa2}, \hyperpage{17}
+    \subitem {aff\+\_\+contenu}, \hyperpage{17}
+    \subitem {aff\+\_\+haut\+\_\+hexa}, \hyperpage{18}
+    \subitem {aff\+\_\+haut\+\_\+hexa2}, \hyperpage{19}
+    \subitem {afficher}, \hyperpage{19}
+    \subitem {afficher2}, \hyperpage{20}
+    \subitem {check\+\_\+win}, \hyperpage{20}
+    \subitem {der\+\_\+ligne}, \hyperpage{22}
+    \subitem {end\+Game}, \hyperpage{15}
+    \subitem {find\+\_\+in\+\_\+node\+\_\+vector}, \hyperpage{20}
+    \subitem {get\+Taille}, \hyperpage{20}
+    \subitem {get\+Taille\+Reelle}, \hyperpage{21}
+    \subitem {hexa}, \hyperpage{22}
+    \subitem {placerpion}, \hyperpage{21}
+    \subitem {plateau}, \hyperpage{16}
+    \subitem {r\+\_\+der\+\_\+ligne}, \hyperpage{21}
+    \subitem {ret\+Particuliers}, \hyperpage{21}
+    \subitem {Rtaillecote}, \hyperpage{21}
+    \subitem {suivre\+Chemin}, \hyperpage{21, 22}
+    \subitem {taillecote}, \hyperpage{23}
+  \item {player}, \hyperpage{23}
+    \subitem {$\sim$player}, \hyperpage{24}
+    \subitem {affcoups}, \hyperpage{25}
+    \subitem {check\+\_\+win}, \hyperpage{25}
+    \subitem {est\+\_\+voisin}, \hyperpage{25}
+    \subitem {ia}, \hyperpage{27}
+    \subitem {id}, \hyperpage{27}
+    \subitem {newid}, \hyperpage{25}
+    \subitem {nom}, \hyperpage{27}
+    \subitem {placer\+\_\+pion}, \hyperpage{26}
+    \subitem {player}, \hyperpage{24}
+    \subitem {return\+Ia}, \hyperpage{26}
+    \subitem {return\+Id}, \hyperpage{26}
+    \subitem {return\+Nom}, \hyperpage{26}
+  \item {playerids}
+    \subitem {jeu}, \hyperpage{10}
+  \item {players}
+    \subitem {jeu}, \hyperpage{11}
+
+  \indexspace
+
+  \item {r\+\_\+der\+\_\+ligne}
+    \subitem {plateau}, \hyperpage{21}
+  \item {racine}
+    \subitem {arbre}, \hyperpage{7}
+  \item {ret\+Particuliers}
+    \subitem {plateau}, \hyperpage{21}
+  \item {return\+Ia}
+    \subitem {player}, \hyperpage{26}
+  \item {return\+Id}
+    \subitem {player}, \hyperpage{26}
+  \item {return\+Nom}
+    \subitem {player}, \hyperpage{26}
+  \item {Rtaillecote}
+    \subitem {plateau}, \hyperpage{21}
+
+  \indexspace
+
+  \item {suivre\+Chemin}
+    \subitem {plateau}, \hyperpage{21, 22}
+
+  \indexspace
+
+  \item {taillecote}
+    \subitem {plateau}, \hyperpage{23}
+  \item {tour}
+    \subitem {jeu}, \hyperpage{9}
+
+  \indexspace
+
+  \item {voir\+Pere}
+    \subitem {arbre}, \hyperpage{7}
+
+\end{theindex}

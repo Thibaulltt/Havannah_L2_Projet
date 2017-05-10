@@ -1,0 +1,23 @@
+This is makeindex, version 2.15 [TeX Live 2016] (kpathsea + Thai support).
+Scanning input file refman.idx....
+!! Input index error (file = refman.idx, line = 69):
+   -- Extra `@' at position 146 of first argument.
+!! Input index error (file = refman.idx, line = 70):
+   -- Extra `@' at position 164 of first argument.
+!! Input index error (file = refman.idx, line = 71):
+   -- Extra `@' at position 146 of first argument.
+!! Input index error (file = refman.idx, line = 72):
+   -- Extra `@' at position 164 of first argument.
+!! Input index error (file = refman.idx, line = 73):
+   -- Extra `@' at position 146 of first argument.
+!! Input index error (file = refman.idx, line = 74):
+   -- Extra `@' at position 164 of first argument.
+!! Input index error (file = refman.idx, line = 75):
+   -- Extra `@' at position 146 of first argument.
+!! Input index error (file = refman.idx, line = 76):
+   -- Extra `@' at position 164 of first argument.
+done (146 entries accepted, 8 rejected).
+Sorting entries....done (1116 comparisons).
+Generating output file refman.ind....done (246 lines written, 0 warnings).
+Output written in refman.ind.
+Transcript written in refman.ilg.

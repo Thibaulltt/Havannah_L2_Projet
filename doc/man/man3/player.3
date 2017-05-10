@@ -1,4 +1,4 @@
-.TH "player" 3 "Mon Apr 24 2017" "Havannah" \" -*- nroff -*-
+.TH "player" 3 "Wed May 10 2017" "Havannah" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -37,10 +37,6 @@ player \- class joueur
 .br
 .RI "Retour du nom du joueur\&. "
 .ti -1c
-.RI "void \fBajouter_coup\fP (std::pair< int, int > cap, int taille)"
-.br
-.RI "Ajout du coup dans la BDD joueur\&. "
-.ti -1c
 .RI "std::pair< std::pair< int, int >, char > \fBplacer_pion\fP ()"
 .br
 .RI "Demande du choix joueur pour son tour\&. "
@@ -72,18 +68,6 @@ player \- class joueur
 .RI "char \fBid\fP"
 .br
 .RI "Identificateur qui sert à différencier les joueur entre eux\&. "
-.ti -1c
-.RI "arbre< int, int > \fBcoups\fP"
-.br
-.RI "Stocke les coups du joueur au fur et à mesure de la progression du jeu\&. "
-.ti -1c
-.RI "vector< noeud< int, int > * > \fBvcoups\fP"
-.br
-.RI "Est un index de tous les noeuds contenus dans l'arbre\&. "
-.ti -1c
-.RI "vector< noeud< int, int > * > \fBfeuille\fP"
-.br
-.RI "Stocke tous les noeuds feuille de l'arbre\&. "
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -142,24 +126,6 @@ Destructeur par défaut\&.
 
 .PP
 Affichage des coups joueur\&. 
-.SS "void player::ajouter_coup (std::pair< int, int > cap, int taille)"
-
-.PP
-Ajout du coup dans la BDD joueur\&. Prends un coup en argument et le place dans le vector<> coups\&. 
-.PP
-\fBParameters:\fP
-.RS 4
-\fIcap\fP Le coup à placer\&. 
-.br
-\fItaille\fP Taille du plateau (permet de déterminer la colonne max du coup)\&. 
-.RE
-.PP
-\fBReturns:\fP
-.RS 4
-La fonction ne retourne rien\&. 
-.RE
-.PP
-
 .SS "bool player::check_win ()"
 
 .PP
@@ -188,7 +154,7 @@ Un booléen permettant de savoir si les points sont voisins\&.
 
 .PP
 Réaffectation de l'identifiant joueur\&. 
-.SS "std::pair< std::pair< int, int >, char > player::placer_pion ()"
+.SS "std::pair<std::pair<int,int>,char> player::placer_pion ()"
 
 .PP
 Demande du choix joueur pour son tour\&. Demande au joueur sur quelle case il souhaite placer le pion, sans se soucier de la taille du plateau\&. 
@@ -200,7 +166,7 @@ Une paire composée d'un identifiant, et de coordonnées x et y pour le placemen
 .PP
 \fBSee also:\fP
 .RS 4
-\fBajouter_coup()\fP 
+ajouter_coup() 
 .RE
 .PP
 
@@ -218,14 +184,6 @@ Retour de l'identifiant joueur\&.
 Retour du nom du joueur\&. 
 .SH "Member Data Documentation"
 .PP 
-.SS "arbre<int,int> player::coups\fC [private]\fP"
-
-.PP
-Stocke les coups du joueur au fur et à mesure de la progression du jeu\&. 
-.SS "vector<noeud<int,int>*> player::feuille\fC [private]\fP"
-
-.PP
-Stocke tous les noeuds feuille de l'arbre\&. 
 .SS "bool player::ia\fC [private]\fP"
 
 .PP
@@ -238,10 +196,6 @@ Identificateur qui sert à différencier les joueur entre eux\&.
 
 .PP
 Stocke le nom choisi par le joueur\&. 
-.SS "vector<noeud<int,int>*> player::vcoups\fC [private]\fP"
-
-.PP
-Est un index de tous les noeuds contenus dans l'arbre\&. 
 
 .SH "Author"
 .PP 

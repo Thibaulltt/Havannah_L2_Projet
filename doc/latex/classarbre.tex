@@ -1,0 +1,126 @@
+\hypertarget{classarbre}{}\section{arbre$<$ T, U $>$ Class Template Reference}
+\label{classarbre}\index{arbre$<$ T, U $>$@{arbre$<$ T, U $>$}}
+
+
+{\ttfamily \#include $<$arbre.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classarbre_ad2dabd1079df654c9045765137638592}{arbre} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hyperlink{classarbre_aad1fbd379cfeeb08d03c4ea91144a431}{arbre} (T info, U info2)
+\begin{DoxyCompactList}\small\item\em Constructeur à deux arguments. \end{DoxyCompactList}\item 
+\hyperlink{classarbre_a42c3498c69b99f10b40824295ff30c9f}{$\sim$arbre} ()
+\item 
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$ \hyperlink{classarbre_a41217bef9d41016b33fac301b6e5d65d}{find} (T res, U res2)
+\begin{DoxyCompactList}\small\item\em Cherche un noeud. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$ \hyperlink{classarbre_a865863585882b2129eabec7bb34e7710}{find} (T res, U res2, \hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$c)
+\begin{DoxyCompactList}\small\item\em Cherche un noeud. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$ \hyperlink{classarbre_aa0a822cdc25b6c5b43eb8ed2afc79799}{ajouter\+\_\+noeud} (std\+::pair$<$ T, U $>$ info, \hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$source)
+\begin{DoxyCompactList}\small\item\em Ajoute un noeud fils à un noeud spécifié \end{DoxyCompactList}\item 
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$ \hyperlink{classarbre_acacc6bf49c2c7b4d50b865ad433d0f3e}{voir\+Pere} (\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$source, bool verif\+Coin, bool verif\+Fourche, bool verif\+Pont)
+\begin{DoxyCompactList}\small\item\em Renvoie le père pénultime de la branche contenant le noeud source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$ \hyperlink{classarbre_a6696f16436fec15805cc414162723039}{racine}
+\begin{DoxyCompactList}\small\item\em Les données contenues dans les noeuds. Elles seront donc du type de l\textquotesingle{}arbre demandé. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classarbre_ad2dabd1079df654c9045765137638592}\label{classarbre_ad2dabd1079df654c9045765137638592}} 
+\index{arbre@{arbre}!arbre@{arbre}}
+\index{arbre@{arbre}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{arbre()}{arbre()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classarbre}{arbre}$<$ T, U $>$\+::\hyperlink{classarbre}{arbre} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur par défaut. 
+
+Il initialise la racine à N\+U\+LL. \mbox{\Hypertarget{classarbre_aad1fbd379cfeeb08d03c4ea91144a431}\label{classarbre_aad1fbd379cfeeb08d03c4ea91144a431}} 
+\index{arbre@{arbre}!arbre@{arbre}}
+\index{arbre@{arbre}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{arbre()}{arbre()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classarbre}{arbre}$<$ T, U $>$\+::\hyperlink{classarbre}{arbre} (\begin{DoxyParamCaption}\item[{T}]{info,  }\item[{U}]{info2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur à deux arguments. 
+
+\mbox{\Hypertarget{classarbre_a42c3498c69b99f10b40824295ff30c9f}\label{classarbre_a42c3498c69b99f10b40824295ff30c9f}} 
+\index{arbre@{arbre}!````~arbre@{$\sim$arbre}}
+\index{````~arbre@{$\sim$arbre}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{$\sim$arbre()}{~arbre()}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classarbre}{arbre}$<$ T, U $>$\+::$\sim$\hyperlink{classarbre}{arbre} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classarbre_aa0a822cdc25b6c5b43eb8ed2afc79799}\label{classarbre_aa0a822cdc25b6c5b43eb8ed2afc79799}} 
+\index{arbre@{arbre}!ajouter\+\_\+noeud@{ajouter\+\_\+noeud}}
+\index{ajouter\+\_\+noeud@{ajouter\+\_\+noeud}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{ajouter\+\_\+noeud()}{ajouter\_noeud()}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$T,U$>$$\ast$ \hyperlink{classarbre}{arbre}$<$ T, U $>$\+::ajouter\+\_\+noeud (\begin{DoxyParamCaption}\item[{std\+::pair$<$ T, U $>$}]{info,  }\item[{\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajoute un noeud fils à un noeud spécifié 
+
+\mbox{\Hypertarget{classarbre_a41217bef9d41016b33fac301b6e5d65d}\label{classarbre_a41217bef9d41016b33fac301b6e5d65d}} 
+\index{arbre@{arbre}!find@{find}}
+\index{find@{find}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$T,U$>$$\ast$ \hyperlink{classarbre}{arbre}$<$ T, U $>$\+::find (\begin{DoxyParamCaption}\item[{T}]{res,  }\item[{U}]{res2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cherche un noeud. 
+
+\mbox{\Hypertarget{classarbre_a865863585882b2129eabec7bb34e7710}\label{classarbre_a865863585882b2129eabec7bb34e7710}} 
+\index{arbre@{arbre}!find@{find}}
+\index{find@{find}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$T,U$>$$\ast$ \hyperlink{classarbre}{arbre}$<$ T, U $>$\+::find (\begin{DoxyParamCaption}\item[{T}]{res,  }\item[{U}]{res2,  }\item[{\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cherche un noeud. 
+
+\mbox{\Hypertarget{classarbre_acacc6bf49c2c7b4d50b865ad433d0f3e}\label{classarbre_acacc6bf49c2c7b4d50b865ad433d0f3e}} 
+\index{arbre@{arbre}!voir\+Pere@{voir\+Pere}}
+\index{voir\+Pere@{voir\+Pere}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{voir\+Pere()}{voirPere()}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$T,U$>$$\ast$ \hyperlink{classarbre}{arbre}$<$ T, U $>$\+::voir\+Pere (\begin{DoxyParamCaption}\item[{\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$}]{source,  }\item[{bool}]{verif\+Coin,  }\item[{bool}]{verif\+Fourche,  }\item[{bool}]{verif\+Pont }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoie le père pénultime de la branche contenant le noeud source. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classarbre_a6696f16436fec15805cc414162723039}\label{classarbre_a6696f16436fec15805cc414162723039}} 
+\index{arbre@{arbre}!racine@{racine}}
+\index{racine@{racine}!arbre@{arbre}}
+\subsubsection{\texorpdfstring{racine}{racine}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$T,U$>$$\ast$ \hyperlink{classarbre}{arbre}$<$ T, U $>$\+::racine}
+
+
+
+Les données contenues dans les noeuds. Elles seront donc du type de l\textquotesingle{}arbre demandé. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{arbre_8h}{arbre.\+h}\end{DoxyCompactItemize}

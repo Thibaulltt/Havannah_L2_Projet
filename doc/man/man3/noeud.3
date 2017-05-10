@@ -1,0 +1,108 @@
+.TH "noeud< T, U >" 3 "Wed May 10 2017" "Havannah" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+noeud< T, U >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <noeud\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBnoeud\fP ()"
+.br
+.RI "Constructeur sans argument\&. "
+.ti -1c
+.RI "\fB~noeud\fP ()"
+.br
+.RI "Destructeur de noeud\&. "
+.ti -1c
+.RI "\fBnoeud\fP (T \fBinfo\fP, U info2)"
+.br
+.RI "Constructeur de noeud avec données à remplir\&. "
+.ti -1c
+.RI "\fBnoeud\fP (T i, U j, \fBnoeud\fP *p, \fBnoeud\fP *fg, \fBnoeud\fP *fd)"
+.br
+.RI "Constructeur de noeud relationnel (avec les pointeurs déjà attribués) "
+.ti -1c
+.RI "void \fBaff\fP ()"
+.br
+.RI "Fonction d'affichage d'un noeud\&. "
+.ti -1c
+.RI "bool \fBoperator==\fP (std::pair< T, U > paireComparee)"
+.br
+.RI "Surcharge d'opérateur d'égalité pour voir si une paire est égale à celle d'un noeud\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBnoeud\fP * \fBpere\fP"
+.br
+.RI "Pointeur vers le père du noeud\&. "
+.ti -1c
+.RI "\fBnoeud\fP * \fBfreredroit\fP"
+.br
+.RI "Pointeur vers le frère du noeud\&. "
+.ti -1c
+.RI "\fBnoeud\fP * \fBfilsgauche\fP"
+.br
+.RI "Pointeur vers le fils du noeud\&. "
+.ti -1c
+.RI "std::pair< T, U > \fBinfo\fP"
+.br
+.RI "Information stockée\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T, class U> \fBnoeud\fP< T, U >::\fBnoeud\fP ()\fC [inline]\fP"
+
+.PP
+Constructeur sans argument\&. 
+.SS "template<class T, class U> \fBnoeud\fP< T, U >::~\fBnoeud\fP ()\fC [inline]\fP"
+
+.PP
+Destructeur de noeud\&. 
+.SS "template<class T, class U> \fBnoeud\fP< T, U >::\fBnoeud\fP (T info, U info2)\fC [inline]\fP"
+
+.PP
+Constructeur de noeud avec données à remplir\&. 
+.SS "template<class T, class U> \fBnoeud\fP< T, U >::\fBnoeud\fP (T i, U j, \fBnoeud\fP< T, U > * p, \fBnoeud\fP< T, U > * fg, \fBnoeud\fP< T, U > * fd)\fC [inline]\fP"
+
+.PP
+Constructeur de noeud relationnel (avec les pointeurs déjà attribués) 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T, class U> void \fBnoeud\fP< T, U >::aff ()\fC [inline]\fP"
+
+.PP
+Fonction d'affichage d'un noeud\&. 
+.SS "template<class T, class U> bool \fBnoeud\fP< T, U >::operator== (std::pair< T, U > paireComparee)\fC [inline]\fP"
+
+.PP
+Surcharge d'opérateur d'égalité pour voir si une paire est égale à celle d'un noeud\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class T, class U> \fBnoeud\fP* \fBnoeud\fP< T, U >::filsgauche"
+
+.PP
+Pointeur vers le fils du noeud\&. 
+.SS "template<class T, class U> \fBnoeud\fP* \fBnoeud\fP< T, U >::freredroit"
+
+.PP
+Pointeur vers le frère du noeud\&. 
+.SS "template<class T, class U> std::pair<T, U> \fBnoeud\fP< T, U >::info"
+
+.PP
+Information stockée\&. 
+.SS "template<class T, class U> \fBnoeud\fP* \fBnoeud\fP< T, U >::pere"
+
+.PP
+Pointeur vers le père du noeud\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Havannah from the source code\&.

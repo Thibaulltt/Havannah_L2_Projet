@@ -96,6 +96,7 @@ template<class T, class U> class arbre {
 				}
 			}
 		}
+		//! Renvoie le père pénultime de la branche contenant le noeud source
 		noeud<T,U>* voirPere(noeud<T,U>* source, bool verifCoin, bool verifFourche, bool verifPont)
 		{
 			if (source == racine)

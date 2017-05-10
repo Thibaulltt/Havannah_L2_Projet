@@ -165,8 +165,21 @@ class plateau
 		//! Fonction permettant de savoir si un joueur 'p' a gagné
 		bool check_win(player p);
 		
+		//! Fonction permettant de suivre le chemin qu'un joueur a créé sur le plateau.
+		/*!
+			Appelle suivreChemin(int i, int j, arbre<int,int>& cheminJoueurs, vector<noeud<int,int>*>& indexCheminJoueur, noeud<int,int>* nouedActuel) avec un noeud créé en racine de l'arbre
+		*/
 		endGame suivreChemin(int i, int j, arbre<int,int>& cheminJoueurs, vector<noeud<int,int>*>& indexCheminJoueur);
-		
+
+		//! Suit le chemin créé par les pions voisins utilisateur
+		/*!
+			- Regarde tous les vosins possibles selon la position dans le plateau
+			- Si un voisin est trouvé, on le cherche dans le vecteur des noeuds de l'arbre :
+			  - Il n'est pas trouvé, donc on  l'ajoute et on continue la recherche a partir de ce point là (on met le booléen node_found à 1)
+			  - Si il est trouvé, on continue l'analyse
+			- Si le booléen node_found est à 1, alors est pas en fin de chemin, donc on ne fait rien
+			- Sinon, on regarde si le joueur a fait un cercle, une fourche ou un pont.
+		*/
 		endGame suivreChemin(int i, int j, arbre<int,int>& cheminJoueurs, vector<noeud<int,int>*>& indexCheminJoueur, noeud<int,int>* nouedActuel);
 
 		bool find_in_node_vector(vector<noeud<int,int>*> sourceVector, std::pair<int,int> information);

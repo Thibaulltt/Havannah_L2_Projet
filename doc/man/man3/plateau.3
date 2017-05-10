@@ -1,4 +1,4 @@
-.TH "plateau" 3 "Mon Apr 24 2017" "Havannah" \" -*- nroff -*-
+.TH "plateau" 3 "Wed May 10 2017" "Havannah" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -68,6 +68,35 @@ plateau \- classe plateau
 .RI "std::pair< int, int > \fBplacerpion\fP (std::pair< std::pair< int, int >, char >)"
 .br
 .RI "Permet de placer un pion ( = affecter une valeur à une case) "
+.ti -1c
+.RI "int \fBgetTaille\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetTailleReelle\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheck_win\fP (\fBplayer\fP p)"
+.br
+.RI "Fonction permettant de savoir si un joueur 'p' a gagné "
+.ti -1c
+.RI "\fBendGame\fP \fBsuivreChemin\fP (int i, int j, \fBarbre\fP< int, int > &cheminJoueurs, vector< \fBnoeud\fP< int, int > *> &indexCheminJoueur)"
+.br
+.RI "Fonction permettant de suivre le chemin qu'un joueur a créé sur le plateau\&. "
+.ti -1c
+.RI "\fBendGame\fP \fBsuivreChemin\fP (int i, int j, \fBarbre\fP< int, int > &cheminJoueurs, vector< \fBnoeud\fP< int, int > *> &indexCheminJoueur, \fBnoeud\fP< int, int > *nouedActuel)"
+.br
+.RI "Suit le chemin créé par les pions voisins utilisateur\&. "
+.ti -1c
+.RI "bool \fBfind_in_node_vector\fP (vector< \fBnoeud\fP< int, int > *> sourceVector, std::pair< int, int > information)"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBendGame\fP { \fBNONE\fP, \fBFORK\fP, \fBRING\fP, \fBBRIDGE\fP }
+.RI "Différentes possibilités de finir le jeu\&. ""
+.br
 .in -1c
 .SS "Private Attributes"
 
@@ -100,6 +129,27 @@ vector
 map 
 .PP
 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBplateau::endGame\fP\fC [private]\fP"
+
+.PP
+Différentes possibilités de finir le jeu\&. 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fINONE \fP\fP
+Le joueur n'a pas gagné la partie\&. 
+.TP
+\fB\fIFORK \fP\fP
+Le joueur a fait une fourche entre 3 côtés\&. 
+.TP
+\fB\fIRING \fP\fP
+Le joueur a fait un cercle avec au moins un trou au mileu\&. 
+.TP
+\fB\fIBRIDGE \fP\fP
+Le joueur a fait un pont entre 2 coins\&. 
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "plateau::plateau ()"
@@ -288,7 +338,17 @@ Pareil que la partie d'avant, mais pour le bas du plateau, avec la fonction \fBa
 .RE
 .PP
 
-.SS "std::pair< int, int > plateau::placerpion (std::pair< std::pair< int, int >, char > choix_joueur)"
+.SS "bool plateau::check_win (\fBplayer\fP p)"
+
+.PP
+Fonction permettant de savoir si un joueur 'p' a gagné 
+.SS "bool plateau::find_in_node_vector (vector< \fBnoeud\fP< int, int > *> sourceVector, std::pair< int, int > information)"
+
+.SS "int plateau::getTaille ()\fC [inline]\fP"
+
+.SS "int plateau::getTailleReelle ()\fC [inline]\fP"
+
+.SS "std::pair<int,int> plateau::placerpion (std::pair< std::pair< int, int >, char >)"
 
 .PP
 Permet de placer un pion ( = affecter une valeur à une case) 
@@ -296,7 +356,7 @@ Permet de placer un pion ( = affecter une valeur à une case)
 
 .PP
 Donne la valeur de la dernière ligne\&. 
-.SS "std::multimap< char, std::pair< int, int > > plateau::retParticuliers ()"
+.SS "std::multimap<char, std::pair<int,int> > plateau::retParticuliers ()"
 
 .PP
 Retourne les coordonnées des pions aux coins et aux côtés\&. Permet de savoir quels cases sont aux coins pour pouvoir vérifier si le joueur 
@@ -304,6 +364,30 @@ Retourne les coordonnées des pions aux coins et aux côtés\&. Permet de savoir
 
 .PP
 Donne la valeur de la taille demandée par le joueur\&. 
+.SS "\fBendGame\fP plateau::suivreChemin (int i, int j, \fBarbre\fP< int, int > & cheminJoueurs, vector< \fBnoeud\fP< int, int > *> & indexCheminJoueur)"
+
+.PP
+Fonction permettant de suivre le chemin qu'un joueur a créé sur le plateau\&. Appelle suivreChemin(int i, int j, arbre<int,int>& cheminJoueurs, vector<noeud<int,int>*>& indexCheminJoueur, noeud<int,int>* nouedActuel) avec un noeud créé en racine de l'arbre 
+.SS "\fBendGame\fP plateau::suivreChemin (int i, int j, \fBarbre\fP< int, int > & cheminJoueurs, vector< \fBnoeud\fP< int, int > *> & indexCheminJoueur, \fBnoeud\fP< int, int > * nouedActuel)"
+
+.PP
+Suit le chemin créé par les pions voisins utilisateur\&. 
+.IP "\(bu" 2
+Regarde tous les vosins possibles selon la position dans le plateau
+.IP "\(bu" 2
+Si un voisin est trouvé, on le cherche dans le vecteur des noeuds de l'arbre :
+.IP "  \(bu" 4
+Il n'est pas trouvé, donc on l'ajoute et on continue la recherche a partir de ce point là (on met le booléen node_found à 1)
+.IP "  \(bu" 4
+Si il est trouvé, on continue l'analyse
+.PP
+
+.IP "\(bu" 2
+Si le booléen node_found est à 1, alors est pas en fin de chemin, donc on ne fait rien
+.IP "\(bu" 2
+Sinon, on regarde si le joueur a fait un cercle, une fourche ou un pont\&. 
+.PP
+
 .SH "Member Data Documentation"
 .PP 
 .SS "int plateau::der_ligne\fC [private]\fP"

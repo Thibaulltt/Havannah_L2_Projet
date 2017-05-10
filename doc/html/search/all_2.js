@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['default_5fnb_5fplayer',['default_nb_player',['../main_8cpp.html#a9cf1b5f789481eb7e59bb264522744f9',1,'main.cpp']]],
-  ['default_5ftaille_5fplateau',['default_taille_plateau',['../main_8cpp.html#a2ab74c95eb8cedb403ac7c44519b99c5',1,'main.cpp']]],
-  ['der_5fligne',['der_ligne',['../classplateau.html#a3ed9526208bf28f0063bdf7c0efb9391',1,'plateau']]]
+  ['check_5fwin',['check_win',['../classjeu.html#a7da98d2c8eaccacc01abb6d25777a7a0',1,'jeu::check_win()'],['../classplateau.html#a064f80a5451965f1efbe982ff9fc6366',1,'plateau::check_win()'],['../classplayer.html#a5eddf905f6904f5737b4f36f7f0ab428',1,'player::check_win()']]]
 ];

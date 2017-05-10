@@ -93,12 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada00e16c16ff0be00896b1f6df9a21de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#ada00e16c16ff0be00896b1f6df9a21de">returnNom</a> ()</td></tr>
 <tr class="memdesc:ada00e16c16ff0be00896b1f6df9a21de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retour du nom du joueur.  <a href="#ada00e16c16ff0be00896b1f6df9a21de">More...</a><br /></td></tr>
 <tr class="separator:ada00e16c16ff0be00896b1f6df9a21de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3e561bd70f63c9b1dd0614afc2971a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#aec3e561bd70f63c9b1dd0614afc2971a">ajouter_coup</a> (std::pair&lt; int, int &gt; cap, int taille)</td></tr>
-<tr class="memdesc:aec3e561bd70f63c9b1dd0614afc2971a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajout du coup dans la BDD joueur.  <a href="#aec3e561bd70f63c9b1dd0614afc2971a">More...</a><br /></td></tr>
-<tr class="separator:aec3e561bd70f63c9b1dd0614afc2971a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f3624d4410230ab77ce6ee7fb0a0df"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::pair&lt; int, int &gt;, char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#a34f3624d4410230ab77ce6ee7fb0a0df">placer_pion</a> ()</td></tr>
-<tr class="memdesc:a34f3624d4410230ab77ce6ee7fb0a0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande du choix joueur pour son tour.  <a href="#a34f3624d4410230ab77ce6ee7fb0a0df">More...</a><br /></td></tr>
-<tr class="separator:a34f3624d4410230ab77ce6ee7fb0a0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77fa6645cfe49dd34b36dc1f5b7649e4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::pair&lt; int, int &gt;, char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#a77fa6645cfe49dd34b36dc1f5b7649e4">placer_pion</a> ()</td></tr>
+<tr class="memdesc:a77fa6645cfe49dd34b36dc1f5b7649e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande du choix joueur pour son tour.  <a href="#a77fa6645cfe49dd34b36dc1f5b7649e4">More...</a><br /></td></tr>
+<tr class="separator:a77fa6645cfe49dd34b36dc1f5b7649e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a75aa099e5a4eac97d3898fde40a3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#a24a75aa099e5a4eac97d3898fde40a3b">est_voisin</a> (std::pair&lt; int, int &gt; point_orig, std::pair&lt; int, int &gt; point_nouv, int t)</td></tr>
 <tr class="memdesc:a24a75aa099e5a4eac97d3898fde40a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie le voisinage d'une case.  <a href="#a24a75aa099e5a4eac97d3898fde40a3b">More...</a><br /></td></tr>
 <tr class="separator:a24a75aa099e5a4eac97d3898fde40a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,15 +117,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5862f005a5367e1b0dc19bdf2846fd34"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#a5862f005a5367e1b0dc19bdf2846fd34">id</a></td></tr>
 <tr class="memdesc:a5862f005a5367e1b0dc19bdf2846fd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificateur qui sert à différencier les joueur entre eux.  <a href="#a5862f005a5367e1b0dc19bdf2846fd34">More...</a><br /></td></tr>
 <tr class="separator:a5862f005a5367e1b0dc19bdf2846fd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5386c8bc522c5c0e39b1e071cf9ca37a"><td class="memItemLeft" align="right" valign="top">arbre&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#a5386c8bc522c5c0e39b1e071cf9ca37a">coups</a></td></tr>
-<tr class="memdesc:a5386c8bc522c5c0e39b1e071cf9ca37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stocke les coups du joueur au fur et à mesure de la progression du jeu.  <a href="#a5386c8bc522c5c0e39b1e071cf9ca37a">More...</a><br /></td></tr>
-<tr class="separator:a5386c8bc522c5c0e39b1e071cf9ca37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a577febe1e35c769385c8c7287df15939"><td class="memItemLeft" align="right" valign="top">vector&lt; noeud&lt; int, int &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#a577febe1e35c769385c8c7287df15939">vcoups</a></td></tr>
-<tr class="memdesc:a577febe1e35c769385c8c7287df15939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Est un index de tous les noeuds contenus dans l'arbre.  <a href="#a577febe1e35c769385c8c7287df15939">More...</a><br /></td></tr>
-<tr class="separator:a577febe1e35c769385c8c7287df15939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa16931420b88ef2fc8ebe28a6bd26b1b"><td class="memItemLeft" align="right" valign="top">vector&lt; noeud&lt; int, int &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplayer.html#aa16931420b88ef2fc8ebe28a6bd26b1b">feuille</a></td></tr>
-<tr class="memdesc:aa16931420b88ef2fc8ebe28a6bd26b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stocke tous les noeuds feuille de l'arbre.  <a href="#aa16931420b88ef2fc8ebe28a6bd26b1b">More...</a><br /></td></tr>
-<tr class="separator:aa16931420b88ef2fc8ebe28a6bd26b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class joueur </p>
@@ -211,44 +199,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Affichage des coups joueur. </p>
-
-</div>
-</div>
-<a id="aec3e561bd70f63c9b1dd0614afc2971a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3e561bd70f63c9b1dd0614afc2971a">&#9670;&nbsp;</a></span>ajouter_coup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void player::ajouter_coup </td>
-          <td>(</td>
-          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
-          <td class="paramname"><em>cap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>taille</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Ajout du coup dans la BDD joueur. </p>
-<p>Prends un coup en argument et le place dans le vector&lt;&gt; coups. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cap</td><td>Le coup à placer. </td></tr>
-    <tr><td class="paramname">taille</td><td>Taille du plateau (permet de déterminer la colonne max du coup). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>La fonction ne retourne rien. </dd></dl>
 
 </div>
 </div>
@@ -344,14 +294,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a34f3624d4410230ab77ce6ee7fb0a0df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f3624d4410230ab77ce6ee7fb0a0df">&#9670;&nbsp;</a></span>placer_pion()</h2>
+<a id="a77fa6645cfe49dd34b36dc1f5b7649e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77fa6645cfe49dd34b36dc1f5b7649e4">&#9670;&nbsp;</a></span>placer_pion()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; std::pair&lt; int, int &gt;, char &gt; player::placer_pion </td>
+          <td class="memname">std::pair&lt;std::pair&lt;int,int&gt;,char&gt; player::placer_pion </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -361,7 +311,7 @@ Private Attributes</h2></td></tr>
 
 <p>Demande du choix joueur pour son tour. </p>
 <p>Demande au joueur sur quelle case il souhaite placer le pion, sans se soucier de la taille du plateau. </p><dl class="section return"><dt>Returns</dt><dd>Une paire composée d'un identifiant, et de coordonnées x et y pour le placement sur le plateau. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classplayer.html#aec3e561bd70f63c9b1dd0614afc2971a" title="Ajout du coup dans la BDD joueur. ">ajouter_coup()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>ajouter_coup() </dd></dl>
 
 </div>
 </div>
@@ -447,54 +397,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a5386c8bc522c5c0e39b1e071cf9ca37a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5386c8bc522c5c0e39b1e071cf9ca37a">&#9670;&nbsp;</a></span>coups</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">arbre&lt;int,int&gt; player::coups</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Stocke les coups du joueur au fur et à mesure de la progression du jeu. </p>
-
-</div>
-</div>
-<a id="aa16931420b88ef2fc8ebe28a6bd26b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa16931420b88ef2fc8ebe28a6bd26b1b">&#9670;&nbsp;</a></span>feuille</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;noeud&lt;int,int&gt;*&gt; player::feuille</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Stocke tous les noeuds feuille de l'arbre. </p>
-
-</div>
-</div>
 <a id="ab5c7590da844e3e2128868820ab9ec45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5c7590da844e3e2128868820ab9ec45">&#9670;&nbsp;</a></span>ia</h2>
 
@@ -567,33 +469,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a577febe1e35c769385c8c7287df15939"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a577febe1e35c769385c8c7287df15939">&#9670;&nbsp;</a></span>vcoups</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;noeud&lt;int,int&gt;*&gt; player::vcoups</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Est un index de tous les noeuds contenus dans l'arbre. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/thibault/Google Drive/PROG/S4/Projet/h/<a class="el" href="player_8h_source.html">player.h</a></li>
-<li>/Users/thibault/Google Drive/PROG/S4/Projet/cpp/<a class="el" href="player_8cpp.html">player.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

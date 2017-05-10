@@ -26,4 +26,4 @@ havannah: ./o/main.o ./o/plateau.o ./o/player.o ./o/jeu.o ./o/arbre.o ./o/noeud.
 doc:
 	@echo "making the documentation ..."
 	@sleep 1
-	@cd doc/; doxygen player_doc > debug.txt; cd latex/; make clean;
+	@cd doc/; doxygen player_doc > debug.txt; cd latex/; make clean; make

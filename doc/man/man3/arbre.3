@@ -1,0 +1,89 @@
+.TH "arbre< T, U >" 3 "Wed May 10 2017" "Havannah" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+arbre< T, U >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <arbre\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBarbre\fP ()"
+.br
+.RI "Constructeur par défaut\&. "
+.ti -1c
+.RI "\fBarbre\fP (T info, U info2)"
+.br
+.RI "Constructeur à deux arguments\&. "
+.ti -1c
+.RI "\fB~arbre\fP ()"
+.br
+.ti -1c
+.RI "\fBnoeud\fP< T, U > * \fBfind\fP (T res, U res2)"
+.br
+.RI "Cherche un noeud\&. "
+.ti -1c
+.RI "\fBnoeud\fP< T, U > * \fBfind\fP (T res, U res2, \fBnoeud\fP< T, U > *c)"
+.br
+.RI "Cherche un noeud\&. "
+.ti -1c
+.RI "\fBnoeud\fP< T, U > * \fBajouter_noeud\fP (std::pair< T, U > info, \fBnoeud\fP< T, U > *source)"
+.br
+.RI "Ajoute un noeud fils à un noeud spécifié "
+.ti -1c
+.RI "\fBnoeud\fP< T, U > * \fBvoirPere\fP (\fBnoeud\fP< T, U > *source, bool verifCoin, bool verifFourche, bool verifPont)"
+.br
+.RI "Renvoie le père pénultime de la branche contenant le noeud source\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBnoeud\fP< T, U > * \fBracine\fP"
+.br
+.RI "Les données contenues dans les noeuds\&. Elles seront donc du type de l'arbre demandé\&. "
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T, class U> \fBarbre\fP< T, U >::\fBarbre\fP ()\fC [inline]\fP"
+
+.PP
+Constructeur par défaut\&. Il initialise la racine à NULL\&. 
+.SS "template<class T, class U> \fBarbre\fP< T, U >::\fBarbre\fP (T info, U info2)\fC [inline]\fP"
+
+.PP
+Constructeur à deux arguments\&. 
+.SS "template<class T, class U> \fBarbre\fP< T, U >::~\fBarbre\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T, class U> \fBnoeud\fP<T,U>* \fBarbre\fP< T, U >::ajouter_noeud (std::pair< T, U > info, \fBnoeud\fP< T, U > * source)\fC [inline]\fP"
+
+.PP
+Ajoute un noeud fils à un noeud spécifié 
+.SS "template<class T, class U> \fBnoeud\fP<T,U>* \fBarbre\fP< T, U >::find (T res, U res2)\fC [inline]\fP"
+
+.PP
+Cherche un noeud\&. 
+.SS "template<class T, class U> \fBnoeud\fP<T,U>* \fBarbre\fP< T, U >::find (T res, U res2, \fBnoeud\fP< T, U > * c)\fC [inline]\fP"
+
+.PP
+Cherche un noeud\&. 
+.SS "template<class T, class U> \fBnoeud\fP<T,U>* \fBarbre\fP< T, U >::voirPere (\fBnoeud\fP< T, U > * source, bool verifCoin, bool verifFourche, bool verifPont)\fC [inline]\fP"
+
+.PP
+Renvoie le père pénultime de la branche contenant le noeud source\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "template<class T, class U> \fBnoeud\fP<T,U>* \fBarbre\fP< T, U >::racine"
+
+.PP
+Les données contenues dans les noeuds\&. Elles seront donc du type de l'arbre demandé\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Havannah from the source code\&.

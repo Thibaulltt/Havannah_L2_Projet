@@ -74,11 +74,34 @@ void jeu::tour()
 	std::pair<int,int> pion_place;
 	for (int i = 0; i < nb_players; ++i)
 	{
-		pion_place = hav->placerpion( players[i]->placer_pion() );
-		//if (pion_place.first <= -1)
-		//	std::cout << " Joueur " << players[i]->returnNom() << " n'a pas pu jouer pour une raison inconnue.\n" << std::endl;
-		//else
-		//	players[i]->ajouter_coup(pion_place, hav->Rtaillecote());
+		if (nbturn == 0 && i != 0)
+		{
+			char r;
+			std::cout << " Voulez-vous effectuer la règle du gateau ? [o/n] ";
+			std::cin >> r;
+			while (r != 'o' && r != 'n')
+			{
+				std::cout << " Valeur non reconnue : ";
+				std::cin >> r;
+			}
+			if (r == 'o')
+			{
+				char old;
+				old = players[i-1]->returnId();
+				players[i-1]->newid(players[i]->returnId());
+				players[i]->newid(old);
+				std::cout << " Joueur " << players[i-1]->returnNom() << " joue maintenant avec l'id " << players[i-1]->returnId() << std::endl;
+				std::cout << " Joueur " << players[i]->returnNom() << " joue maintenant avec l'id " << players[i]->returnId() << std::endl;
+			}
+			else
+			{
+				pion_place = hav->placerpion( players[i]->placer_pion() );
+			}
+		}
+		else
+		{
+			pion_place = hav->placerpion( players[i]->placer_pion() );
+		}
 	}
 	nbturn++;
 }

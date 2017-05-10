@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['nb_5fia',['nb_ia',['../classjeu.html#a725c0616180898259dd472d009e844fc',1,'jeu']]],
-  ['nb_5fplayers',['nb_players',['../classjeu.html#af5d010efc2e6dec9ea8da739bd5f19b5',1,'jeu']]],
-  ['nbturn',['nbturn',['../classjeu.html#ae28d01ac3e91246e6269df4d62470913',1,'jeu']]],
-  ['nom',['nom',['../classplayer.html#ae6c0f854d63dc4b938b52f10b4334dbc',1,'player']]]
+  ['part_5fplateau',['part_plateau',['../classjeu.html#abd8f4b8b02d750e302903f616e897ad0',1,'jeu']]],
+  ['pere',['pere',['../classnoeud.html#ab00690971a24c6013c5484aeb23eecbf',1,'noeud']]],
+  ['playerids',['playerids',['../classjeu.html#ada4888da3a6c7036f47f47515f87a983',1,'jeu']]],
+  ['players',['players',['../classjeu.html#ae005d31d8935c2d9e7ddb53d25efcc31',1,'jeu']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['est_5fvoisin',['est_voisin',['../classplayer.html#a24a75aa099e5a4eac97d3898fde40a3b',1,'player']]]
+  ['der_5fligne',['der_ligne',['../classplateau.html#a3ed9526208bf28f0063bdf7c0efb9391',1,'plateau']]]
 ];

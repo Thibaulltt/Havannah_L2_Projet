@@ -61,6 +61,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classplateau-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,12 +112,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab720f7c75d770bf0d6381e080e7524b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#ab720f7c75d770bf0d6381e080e7524b1">aff_haut_hexa2</a> (int a, int sep, bool e_l, bool p_l, bool l_l, char *p)</td></tr>
 <tr class="memdesc:ab720f7c75d770bf0d6381e080e7524b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage haut hexa en losange.  <a href="#ab720f7c75d770bf0d6381e080e7524b1">More...</a><br /></td></tr>
 <tr class="separator:ab720f7c75d770bf0d6381e080e7524b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ab855651bf0107e7af3867873d54389"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; char, std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a1ab855651bf0107e7af3867873d54389">retParticuliers</a> ()</td></tr>
-<tr class="memdesc:a1ab855651bf0107e7af3867873d54389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne les coordonnées des pions aux coins et aux côtés.  <a href="#a1ab855651bf0107e7af3867873d54389">More...</a><br /></td></tr>
-<tr class="separator:a1ab855651bf0107e7af3867873d54389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973c415e1427c7fa427d2d8da95f5cff"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a973c415e1427c7fa427d2d8da95f5cff">placerpion</a> (std::pair&lt; std::pair&lt; int, int &gt;, char &gt;)</td></tr>
-<tr class="memdesc:a973c415e1427c7fa427d2d8da95f5cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de placer un pion ( = affecter une valeur à une case)  <a href="#a973c415e1427c7fa427d2d8da95f5cff">More...</a><br /></td></tr>
-<tr class="separator:a973c415e1427c7fa427d2d8da95f5cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ef298374f71fb9bcdcf7c878ba9be8"><td class="memItemLeft" align="right" valign="top">std::multimap&lt; char, std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#ae3ef298374f71fb9bcdcf7c878ba9be8">retParticuliers</a> ()</td></tr>
+<tr class="memdesc:ae3ef298374f71fb9bcdcf7c878ba9be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne les coordonnées des pions aux coins et aux côtés.  <a href="#ae3ef298374f71fb9bcdcf7c878ba9be8">More...</a><br /></td></tr>
+<tr class="separator:ae3ef298374f71fb9bcdcf7c878ba9be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e3c4e4727aed1b116a2f472ee98fc5"><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#ab7e3c4e4727aed1b116a2f472ee98fc5">placerpion</a> (std::pair&lt; std::pair&lt; int, int &gt;, char &gt;)</td></tr>
+<tr class="memdesc:ab7e3c4e4727aed1b116a2f472ee98fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permet de placer un pion ( = affecter une valeur à une case)  <a href="#ab7e3c4e4727aed1b116a2f472ee98fc5">More...</a><br /></td></tr>
+<tr class="separator:ab7e3c4e4727aed1b116a2f472ee98fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125f7eafbef231cef7db62eb5e2ab94b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a125f7eafbef231cef7db62eb5e2ab94b">getTaille</a> ()</td></tr>
+<tr class="separator:a125f7eafbef231cef7db62eb5e2ab94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e938ee9402b3d7a0b6eeb4b08557f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a45e938ee9402b3d7a0b6eeb4b08557f7">getTailleReelle</a> ()</td></tr>
+<tr class="separator:a45e938ee9402b3d7a0b6eeb4b08557f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064f80a5451965f1efbe982ff9fc6366"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a064f80a5451965f1efbe982ff9fc6366">check_win</a> (<a class="el" href="classplayer.html">player</a> p)</td></tr>
+<tr class="memdesc:a064f80a5451965f1efbe982ff9fc6366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de savoir si un joueur 'p' a gagné  <a href="#a064f80a5451965f1efbe982ff9fc6366">More...</a><br /></td></tr>
+<tr class="separator:a064f80a5451965f1efbe982ff9fc6366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb292e7cf7ffd0df0fe4cec587ed5f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222">endGame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#accb292e7cf7ffd0df0fe4cec587ed5f7">suivreChemin</a> (int i, int j, <a class="el" href="classarbre.html">arbre</a>&lt; int, int &gt; &amp;cheminJoueurs, vector&lt; <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&gt; &amp;indexCheminJoueur)</td></tr>
+<tr class="memdesc:accb292e7cf7ffd0df0fe4cec587ed5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction permettant de suivre le chemin qu'un joueur a créé sur le plateau.  <a href="#accb292e7cf7ffd0df0fe4cec587ed5f7">More...</a><br /></td></tr>
+<tr class="separator:accb292e7cf7ffd0df0fe4cec587ed5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1128f1aaf7cb50cabec306d3171858b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222">endGame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a1128f1aaf7cb50cabec306d3171858b5">suivreChemin</a> (int i, int j, <a class="el" href="classarbre.html">arbre</a>&lt; int, int &gt; &amp;cheminJoueurs, vector&lt; <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&gt; &amp;indexCheminJoueur, <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *nouedActuel)</td></tr>
+<tr class="memdesc:a1128f1aaf7cb50cabec306d3171858b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suit le chemin créé par les pions voisins utilisateur.  <a href="#a1128f1aaf7cb50cabec306d3171858b5">More...</a><br /></td></tr>
+<tr class="separator:a1128f1aaf7cb50cabec306d3171858b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9989e2096354655caf666fdc267dc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a9b9989e2096354655caf666fdc267dc1">find_in_node_vector</a> (vector&lt; <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&gt; sourceVector, std::pair&lt; int, int &gt; information)</td></tr>
+<tr class="separator:a9b9989e2096354655caf666fdc267dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a94b54e0a84c850657a83176f812db222"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222">endGame</a> { <a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222a5bfc0d833c1c007b5593551af2d9d6cc">NONE</a>, 
+<a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222a9b73788ff0e7d0a57da2e75347ae86ad">FORK</a>, 
+<a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222a813754211bf907e4b1faa27483995887">RING</a>, 
+<a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222a980eb058ada027f23b4dc56b52f7853f">BRIDGE</a>
+ }<tr class="memdesc:a94b54e0a84c850657a83176f812db222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Différentes possibilités de finir le jeu.  <a href="classplateau.html#a94b54e0a84c850657a83176f812db222">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a94b54e0a84c850657a83176f812db222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -138,7 +164,42 @@ Private Attributes</h2></td></tr>
 <li>vector</li>
 <li>map </li>
 </ul>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a94b54e0a84c850657a83176f812db222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b54e0a84c850657a83176f812db222">&#9670;&nbsp;</a></span>endGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222">plateau::endGame</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Différentes possibilités de finir le jeu. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a94b54e0a84c850657a83176f812db222a5bfc0d833c1c007b5593551af2d9d6cc"></a>NONE&#160;</td><td class="fielddoc"><p>Le joueur n'a pas gagné la partie. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a94b54e0a84c850657a83176f812db222a9b73788ff0e7d0a57da2e75347ae86ad"></a>FORK&#160;</td><td class="fielddoc"><p>Le joueur a fait une fourche entre 3 côtés. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a94b54e0a84c850657a83176f812db222a813754211bf907e4b1faa27483995887"></a>RING&#160;</td><td class="fielddoc"><p>Le joueur a fait un cercle avec au moins un trou au mileu. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a94b54e0a84c850657a83176f812db222a980eb058ada027f23b4dc56b52f7853f"></a>BRIDGE&#160;</td><td class="fielddoc"><p>Le joueur a fait un pont entre 2 coins. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4a106572264e08856397e78371cd047b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a106572264e08856397e78371cd047b">&#9670;&nbsp;</a></span>plateau() <span class="overload">[1/2]</span></h2>
 
@@ -567,17 +628,115 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a973c415e1427c7fa427d2d8da95f5cff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a973c415e1427c7fa427d2d8da95f5cff">&#9670;&nbsp;</a></span>placerpion()</h2>
+<a id="a064f80a5451965f1efbe982ff9fc6366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a064f80a5451965f1efbe982ff9fc6366">&#9670;&nbsp;</a></span>check_win()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; int, int &gt; plateau::placerpion </td>
+          <td class="memname">bool plateau::check_win </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classplayer.html">player</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de savoir si un joueur 'p' a gagné </p>
+
+</div>
+</div>
+<a id="a9b9989e2096354655caf666fdc267dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9989e2096354655caf666fdc267dc1">&#9670;&nbsp;</a></span>find_in_node_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool plateau::find_in_node_vector </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&gt;&#160;</td>
+          <td class="paramname"><em>sourceVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>information</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a125f7eafbef231cef7db62eb5e2ab94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125f7eafbef231cef7db62eb5e2ab94b">&#9670;&nbsp;</a></span>getTaille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int plateau::getTaille </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45e938ee9402b3d7a0b6eeb4b08557f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e938ee9402b3d7a0b6eeb4b08557f7">&#9670;&nbsp;</a></span>getTailleReelle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int plateau::getTailleReelle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7e3c4e4727aed1b116a2f472ee98fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e3c4e4727aed1b116a2f472ee98fc5">&#9670;&nbsp;</a></span>placerpion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;int,int&gt; plateau::placerpion </td>
           <td>(</td>
           <td class="paramtype">std::pair&lt; std::pair&lt; int, int &gt;, char &gt;&#160;</td>
-          <td class="paramname"><em>choix_joueur</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -614,14 +773,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ab855651bf0107e7af3867873d54389"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ab855651bf0107e7af3867873d54389">&#9670;&nbsp;</a></span>retParticuliers()</h2>
+<a id="ae3ef298374f71fb9bcdcf7c878ba9be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ef298374f71fb9bcdcf7c878ba9be8">&#9670;&nbsp;</a></span>retParticuliers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::multimap&lt; char, std::pair&lt; int, int &gt; &gt; plateau::retParticuliers </td>
+          <td class="memname">std::multimap&lt;char, std::pair&lt;int,int&gt; &gt; plateau::retParticuliers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -658,6 +817,107 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Donne la valeur de la taille demandée par le joueur. </p>
+
+</div>
+</div>
+<a id="accb292e7cf7ffd0df0fe4cec587ed5f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb292e7cf7ffd0df0fe4cec587ed5f7">&#9670;&nbsp;</a></span>suivreChemin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222">endGame</a> plateau::suivreChemin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarbre.html">arbre</a>&lt; int, int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cheminJoueurs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>indexCheminJoueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction permettant de suivre le chemin qu'un joueur a créé sur le plateau. </p>
+<p>Appelle suivreChemin(int i, int j, arbre&lt;int,int&gt;&amp; cheminJoueurs, vector&lt;noeud&lt;int,int&gt;*&gt;&amp; indexCheminJoueur, noeud&lt;int,int&gt;* nouedActuel) avec un noeud créé en racine de l'arbre </p>
+
+</div>
+</div>
+<a id="a1128f1aaf7cb50cabec306d3171858b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1128f1aaf7cb50cabec306d3171858b5">&#9670;&nbsp;</a></span>suivreChemin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classplateau.html#a94b54e0a84c850657a83176f812db222">endGame</a> plateau::suivreChemin </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classarbre.html">arbre</a>&lt; int, int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>cheminJoueurs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&gt; &amp;&#160;</td>
+          <td class="paramname"><em>indexCheminJoueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnoeud.html">noeud</a>&lt; int, int &gt; *&#160;</td>
+          <td class="paramname"><em>nouedActuel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Suit le chemin créé par les pions voisins utilisateur. </p>
+<ul>
+<li>Regarde tous les vosins possibles selon la position dans le plateau</li>
+<li>Si un voisin est trouvé, on le cherche dans le vecteur des noeuds de l'arbre :<ul>
+<li>Il n'est pas trouvé, donc on l'ajoute et on continue la recherche a partir de ce point là (on met le booléen node_found à 1)</li>
+<li>Si il est trouvé, on continue l'analyse</li>
+</ul>
+</li>
+<li>Si le booléen node_found est à 1, alors est pas en fin de chemin, donc on ne fait rien</li>
+<li>Sinon, on regarde si le joueur a fait un cercle, une fourche ou un pont. </li>
+</ul>
 
 </div>
 </div>
@@ -734,9 +994,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/thibault/Google Drive/PROG/S4/Projet/h/<a class="el" href="plateau_8h_source.html">plateau.h</a></li>
-<li>/Users/thibault/Google Drive/PROG/S4/Projet/cpp/<a class="el" href="plateau_8cpp.html">plateau.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

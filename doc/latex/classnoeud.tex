@@ -1,0 +1,156 @@
+\hypertarget{classnoeud}{}\section{noeud$<$ T, U $>$ Class Template Reference}
+\label{classnoeud}\index{noeud$<$ T, U $>$@{noeud$<$ T, U $>$}}
+
+
+{\ttfamily \#include $<$noeud.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnoeud_ad68daacd6bece9b3358ffce75ba4fcb3}{noeud} ()
+\begin{DoxyCompactList}\small\item\em Constructeur sans argument. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud_a75bb30950411d77e2cf47b97eb575e96}{$\sim$noeud} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de noeud. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud_a70ef2fae1a2b747fd5520220073f142a}{noeud} (T \hyperlink{classnoeud_ad6e70a2d7350a11040d53468eaa40510}{info}, U info2)
+\begin{DoxyCompactList}\small\item\em Constructeur de noeud avec données à remplir. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud_af0e9231a1505f8ca9e563d728e830f30}{noeud} (T i, U j, \hyperlink{classnoeud}{noeud} $\ast$p, \hyperlink{classnoeud}{noeud} $\ast$fg, \hyperlink{classnoeud}{noeud} $\ast$fd)
+\begin{DoxyCompactList}\small\item\em Constructeur de noeud relationnel (avec les pointeurs déjà attribués) \end{DoxyCompactList}\item 
+void \hyperlink{classnoeud_af6f7f3eb0fa5e063f4fafce09eada25e}{aff} ()
+\begin{DoxyCompactList}\small\item\em Fonction d\textquotesingle{}affichage d\textquotesingle{}un noeud. \end{DoxyCompactList}\item 
+bool \hyperlink{classnoeud_a2a6e29d59b713f170ca6bf72d2622ee9}{operator==} (std\+::pair$<$ T, U $>$ paire\+Comparee)
+\begin{DoxyCompactList}\small\item\em Surcharge d\textquotesingle{}opérateur d\textquotesingle{}égalité pour voir si une paire est égale à celle d\textquotesingle{}un noeud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnoeud}{noeud} $\ast$ \hyperlink{classnoeud_ab00690971a24c6013c5484aeb23eecbf}{pere}
+\begin{DoxyCompactList}\small\item\em Pointeur vers le père du noeud. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud}{noeud} $\ast$ \hyperlink{classnoeud_aaeab078493a53d62f1ae0a99e53a9308}{freredroit}
+\begin{DoxyCompactList}\small\item\em Pointeur vers le frère du noeud. \end{DoxyCompactList}\item 
+\hyperlink{classnoeud}{noeud} $\ast$ \hyperlink{classnoeud_ae467dc4fa40f58924f45ac7ca634cd03}{filsgauche}
+\begin{DoxyCompactList}\small\item\em Pointeur vers le fils du noeud. \end{DoxyCompactList}\item 
+std\+::pair$<$ T, U $>$ \hyperlink{classnoeud_ad6e70a2d7350a11040d53468eaa40510}{info}
+\begin{DoxyCompactList}\small\item\em Information stockée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnoeud_ad68daacd6bece9b3358ffce75ba4fcb3}\label{classnoeud_ad68daacd6bece9b3358ffce75ba4fcb3}} 
+\index{noeud@{noeud}!noeud@{noeud}}
+\index{noeud@{noeud}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{noeud()}{noeud()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::\hyperlink{classnoeud}{noeud} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur sans argument. 
+
+\mbox{\Hypertarget{classnoeud_a75bb30950411d77e2cf47b97eb575e96}\label{classnoeud_a75bb30950411d77e2cf47b97eb575e96}} 
+\index{noeud@{noeud}!````~noeud@{$\sim$noeud}}
+\index{````~noeud@{$\sim$noeud}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{$\sim$noeud()}{~noeud()}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::$\sim$\hyperlink{classnoeud}{noeud} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructeur de noeud. 
+
+\mbox{\Hypertarget{classnoeud_a70ef2fae1a2b747fd5520220073f142a}\label{classnoeud_a70ef2fae1a2b747fd5520220073f142a}} 
+\index{noeud@{noeud}!noeud@{noeud}}
+\index{noeud@{noeud}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{noeud()}{noeud()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::\hyperlink{classnoeud}{noeud} (\begin{DoxyParamCaption}\item[{T}]{info,  }\item[{U}]{info2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de noeud avec données à remplir. 
+
+\mbox{\Hypertarget{classnoeud_af0e9231a1505f8ca9e563d728e830f30}\label{classnoeud_af0e9231a1505f8ca9e563d728e830f30}} 
+\index{noeud@{noeud}!noeud@{noeud}}
+\index{noeud@{noeud}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{noeud()}{noeud()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::\hyperlink{classnoeud}{noeud} (\begin{DoxyParamCaption}\item[{T}]{i,  }\item[{U}]{j,  }\item[{\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$}]{p,  }\item[{\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$}]{fg,  }\item[{\hyperlink{classnoeud}{noeud}$<$ T, U $>$ $\ast$}]{fd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de noeud relationnel (avec les pointeurs déjà attribués) 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnoeud_af6f7f3eb0fa5e063f4fafce09eada25e}\label{classnoeud_af6f7f3eb0fa5e063f4fafce09eada25e}} 
+\index{noeud@{noeud}!aff@{aff}}
+\index{aff@{aff}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{aff()}{aff()}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+void \hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::aff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Fonction d\textquotesingle{}affichage d\textquotesingle{}un noeud. 
+
+\mbox{\Hypertarget{classnoeud_a2a6e29d59b713f170ca6bf72d2622ee9}\label{classnoeud_a2a6e29d59b713f170ca6bf72d2622ee9}} 
+\index{noeud@{noeud}!operator==@{operator==}}
+\index{operator==@{operator==}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+bool \hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::operator== (\begin{DoxyParamCaption}\item[{std\+::pair$<$ T, U $>$}]{paire\+Comparee }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Surcharge d\textquotesingle{}opérateur d\textquotesingle{}égalité pour voir si une paire est égale à celle d\textquotesingle{}un noeud. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnoeud_ae467dc4fa40f58924f45ac7ca634cd03}\label{classnoeud_ae467dc4fa40f58924f45ac7ca634cd03}} 
+\index{noeud@{noeud}!filsgauche@{filsgauche}}
+\index{filsgauche@{filsgauche}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{filsgauche}{filsgauche}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$\ast$ \hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::filsgauche}
+
+
+
+Pointeur vers le fils du noeud. 
+
+\mbox{\Hypertarget{classnoeud_aaeab078493a53d62f1ae0a99e53a9308}\label{classnoeud_aaeab078493a53d62f1ae0a99e53a9308}} 
+\index{noeud@{noeud}!freredroit@{freredroit}}
+\index{freredroit@{freredroit}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{freredroit}{freredroit}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$\ast$ \hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::freredroit}
+
+
+
+Pointeur vers le frère du noeud. 
+
+\mbox{\Hypertarget{classnoeud_ad6e70a2d7350a11040d53468eaa40510}\label{classnoeud_ad6e70a2d7350a11040d53468eaa40510}} 
+\index{noeud@{noeud}!info@{info}}
+\index{info@{info}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+std\+::pair$<$T, U$>$ \hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::info}
+
+
+
+Information stockée. 
+
+\mbox{\Hypertarget{classnoeud_ab00690971a24c6013c5484aeb23eecbf}\label{classnoeud_ab00690971a24c6013c5484aeb23eecbf}} 
+\index{noeud@{noeud}!pere@{pere}}
+\index{pere@{pere}!noeud@{noeud}}
+\subsubsection{\texorpdfstring{pere}{pere}}
+{\footnotesize\ttfamily template$<$class T, class U$>$ \\
+\hyperlink{classnoeud}{noeud}$\ast$ \hyperlink{classnoeud}{noeud}$<$ T, U $>$\+::pere}
+
+
+
+Pointeur vers le père du noeud. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{noeud_8h}{noeud.\+h}\end{DoxyCompactItemize}

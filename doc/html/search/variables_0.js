@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['coups',['coups',['../classplayer.html#a5386c8bc522c5c0e39b1e071cf9ca37a',1,'player']]]
+  ['der_5fligne',['der_ligne',['../classplateau.html#a3ed9526208bf28f0063bdf7c0efb9391',1,'plateau']]]
 ];

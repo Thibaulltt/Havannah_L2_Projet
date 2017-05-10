@@ -94,5 +94,25 @@ void lancer_partie()
 
 void changer_param()
 {
+	cout << " Entrez une nouvelle taille de plateau : ";
+	try{
+		cin >> default_taille_plateau;
+	}
+	catch (...)
+	{
+		cout << " Valeur non comprise. Retour paramètre par défaut." << endl;
+		default_taille_plateau = 8;
+	}
+	cout << " Entrez un nouveau nombre de joueurs ( 0 < n < 3 ) : ";
+	try {
+		cin >> default_nb_player;
+		while (default_nb_player > 3 || default_nb_player < 0)
+			cin >> default_nb_player;
+	}
+	catch (...)
+	{
+		cout << " Valeur non comprise. Retour paramètre par défaut." << endl;
+		default_nb_player = 2;
+	}
 	return;
 }

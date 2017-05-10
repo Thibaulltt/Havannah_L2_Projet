@@ -36,10 +36,31 @@ void \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_
 \begin{DoxyCompactList}\small\item\em Affichage bas hexa en losange. \end{DoxyCompactList}\item 
 void \hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2} (int a, int sep, bool e\+\_\+l, bool p\+\_\+l, bool l\+\_\+l, char $\ast$p)
 \begin{DoxyCompactList}\small\item\em Affichage haut hexa en losange. \end{DoxyCompactList}\item 
-std\+::multimap$<$ char, std\+::pair$<$ int, int $>$ $>$ \hyperlink{classplateau_a1ab855651bf0107e7af3867873d54389}{ret\+Particuliers} ()
+std\+::multimap$<$ char, std\+::pair$<$ int, int $>$ $>$ \hyperlink{classplateau_ae3ef298374f71fb9bcdcf7c878ba9be8}{ret\+Particuliers} ()
 \begin{DoxyCompactList}\small\item\em Retourne les coordonnées des pions aux coins et aux côtés. \end{DoxyCompactList}\item 
-std\+::pair$<$ int, int $>$ \hyperlink{classplateau_a973c415e1427c7fa427d2d8da95f5cff}{placerpion} (std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$)
-\begin{DoxyCompactList}\small\item\em Permet de placer un pion ( = affecter une valeur à une case) \end{DoxyCompactList}\end{DoxyCompactItemize}
+std\+::pair$<$ int, int $>$ \hyperlink{classplateau_ab7e3c4e4727aed1b116a2f472ee98fc5}{placerpion} (std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$)
+\begin{DoxyCompactList}\small\item\em Permet de placer un pion ( = affecter une valeur à une case) \end{DoxyCompactList}\item 
+int \hyperlink{classplateau_a125f7eafbef231cef7db62eb5e2ab94b}{get\+Taille} ()
+\item 
+int \hyperlink{classplateau_a45e938ee9402b3d7a0b6eeb4b08557f7}{get\+Taille\+Reelle} ()
+\item 
+bool \hyperlink{classplateau_a064f80a5451965f1efbe982ff9fc6366}{check\+\_\+win} (\hyperlink{classplayer}{player} p)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de savoir si un joueur \textquotesingle{}p\textquotesingle{} a gagné \end{DoxyCompactList}\item 
+\hyperlink{classplateau_a94b54e0a84c850657a83176f812db222}{end\+Game} \hyperlink{classplateau_accb292e7cf7ffd0df0fe4cec587ed5f7}{suivre\+Chemin} (int i, int j, \hyperlink{classarbre}{arbre}$<$ int, int $>$ \&chemin\+Joueurs, vector$<$ \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$$>$ \&index\+Chemin\+Joueur)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de suivre le chemin qu\textquotesingle{}un joueur a créé sur le plateau. \end{DoxyCompactList}\item 
+\hyperlink{classplateau_a94b54e0a84c850657a83176f812db222}{end\+Game} \hyperlink{classplateau_a1128f1aaf7cb50cabec306d3171858b5}{suivre\+Chemin} (int i, int j, \hyperlink{classarbre}{arbre}$<$ int, int $>$ \&chemin\+Joueurs, vector$<$ \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$$>$ \&index\+Chemin\+Joueur, \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$noued\+Actuel)
+\begin{DoxyCompactList}\small\item\em Suit le chemin créé par les pions voisins utilisateur. \end{DoxyCompactList}\item 
+bool \hyperlink{classplateau_a9b9989e2096354655caf666fdc267dc1}{find\+\_\+in\+\_\+node\+\_\+vector} (vector$<$ \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$$>$ source\+Vector, std\+::pair$<$ int, int $>$ information)
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classplateau_a94b54e0a84c850657a83176f812db222}{end\+Game} \{ \hyperlink{classplateau_a94b54e0a84c850657a83176f812db222a5bfc0d833c1c007b5593551af2d9d6cc}{N\+O\+NE}, 
+\hyperlink{classplateau_a94b54e0a84c850657a83176f812db222a9b73788ff0e7d0a57da2e75347ae86ad}{F\+O\+RK}, 
+\hyperlink{classplateau_a94b54e0a84c850657a83176f812db222a813754211bf907e4b1faa27483995887}{R\+I\+NG}, 
+\hyperlink{classplateau_a94b54e0a84c850657a83176f812db222a980eb058ada027f23b4dc56b52f7853f}{B\+R\+I\+D\+GE}
+ \}\begin{DoxyCompactList}\small\item\em Différentes possibilités de finir le jeu. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,6 +83,37 @@ Librairies incluses \+:
 \item vector
 \item map 
 \end{DoxyItemize}
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classplateau_a94b54e0a84c850657a83176f812db222}\label{classplateau_a94b54e0a84c850657a83176f812db222}} 
+\index{plateau@{plateau}!end\+Game@{end\+Game}}
+\index{end\+Game@{end\+Game}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{end\+Game}{endGame}}
+{\footnotesize\ttfamily enum \hyperlink{classplateau_a94b54e0a84c850657a83176f812db222}{plateau\+::end\+Game}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Différentes possibilités de finir le jeu. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+NE@{N\+O\+NE}!plateau@{plateau}}\index{plateau@{plateau}!N\+O\+NE@{N\+O\+NE}}}\mbox{\Hypertarget{classplateau_a94b54e0a84c850657a83176f812db222a5bfc0d833c1c007b5593551af2d9d6cc}\label{classplateau_a94b54e0a84c850657a83176f812db222a5bfc0d833c1c007b5593551af2d9d6cc}} 
+N\+O\+NE&Le joueur n\textquotesingle{}a pas gagné la partie. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+RK@{F\+O\+RK}!plateau@{plateau}}\index{plateau@{plateau}!F\+O\+RK@{F\+O\+RK}}}\mbox{\Hypertarget{classplateau_a94b54e0a84c850657a83176f812db222a9b73788ff0e7d0a57da2e75347ae86ad}\label{classplateau_a94b54e0a84c850657a83176f812db222a9b73788ff0e7d0a57da2e75347ae86ad}} 
+F\+O\+RK&Le joueur a fait une fourche entre 3 côtés. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+I\+NG@{R\+I\+NG}!plateau@{plateau}}\index{plateau@{plateau}!R\+I\+NG@{R\+I\+NG}}}\mbox{\Hypertarget{classplateau_a94b54e0a84c850657a83176f812db222a813754211bf907e4b1faa27483995887}\label{classplateau_a94b54e0a84c850657a83176f812db222a813754211bf907e4b1faa27483995887}} 
+R\+I\+NG&Le joueur a fait un cercle avec au moins un trou au mileu. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+R\+I\+D\+GE@{B\+R\+I\+D\+GE}!plateau@{plateau}}\index{plateau@{plateau}!B\+R\+I\+D\+GE@{B\+R\+I\+D\+GE}}}\mbox{\Hypertarget{classplateau_a94b54e0a84c850657a83176f812db222a980eb058ada027f23b4dc56b52f7853f}\label{classplateau_a94b54e0a84c850657a83176f812db222a980eb058ada027f23b4dc56b52f7853f}} 
+B\+R\+I\+D\+GE&Le joueur a fait un pont entre 2 coins. \\
+\hline
+
+\end{DoxyEnumFields}
+
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classplateau_a4a106572264e08856397e78371cd047b}\label{classplateau_a4a106572264e08856397e78371cd047b}} 
@@ -283,11 +335,39 @@ Les losanges représentent les hexagones. Cette visualisation permet de voir le 
 \begin{DoxySeeAlso}{See also}
 \hyperlink{classplateau_ab720f7c75d770bf0d6381e080e7524b1}{aff\+\_\+haut\+\_\+hexa2()} and \hyperlink{classplateau_add9fec84a84fb5b4c101f2056fb7b6cc}{aff\+\_\+bas\+\_\+hexa2()} 
 \end{DoxySeeAlso}
-\mbox{\Hypertarget{classplateau_a973c415e1427c7fa427d2d8da95f5cff}\label{classplateau_a973c415e1427c7fa427d2d8da95f5cff}} 
+\mbox{\Hypertarget{classplateau_a064f80a5451965f1efbe982ff9fc6366}\label{classplateau_a064f80a5451965f1efbe982ff9fc6366}} 
+\index{plateau@{plateau}!check\+\_\+win@{check\+\_\+win}}
+\index{check\+\_\+win@{check\+\_\+win}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{check\+\_\+win()}{check\_win()}}
+{\footnotesize\ttfamily bool plateau\+::check\+\_\+win (\begin{DoxyParamCaption}\item[{\hyperlink{classplayer}{player}}]{p }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de savoir si un joueur \textquotesingle{}p\textquotesingle{} a gagné 
+
+\mbox{\Hypertarget{classplateau_a9b9989e2096354655caf666fdc267dc1}\label{classplateau_a9b9989e2096354655caf666fdc267dc1}} 
+\index{plateau@{plateau}!find\+\_\+in\+\_\+node\+\_\+vector@{find\+\_\+in\+\_\+node\+\_\+vector}}
+\index{find\+\_\+in\+\_\+node\+\_\+vector@{find\+\_\+in\+\_\+node\+\_\+vector}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{find\+\_\+in\+\_\+node\+\_\+vector()}{find\_in\_node\_vector()}}
+{\footnotesize\ttfamily bool plateau\+::find\+\_\+in\+\_\+node\+\_\+vector (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$$>$}]{source\+Vector,  }\item[{std\+::pair$<$ int, int $>$}]{information }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classplateau_a125f7eafbef231cef7db62eb5e2ab94b}\label{classplateau_a125f7eafbef231cef7db62eb5e2ab94b}} 
+\index{plateau@{plateau}!get\+Taille@{get\+Taille}}
+\index{get\+Taille@{get\+Taille}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{get\+Taille()}{getTaille()}}
+{\footnotesize\ttfamily int plateau\+::get\+Taille (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplateau_a45e938ee9402b3d7a0b6eeb4b08557f7}\label{classplateau_a45e938ee9402b3d7a0b6eeb4b08557f7}} 
+\index{plateau@{plateau}!get\+Taille\+Reelle@{get\+Taille\+Reelle}}
+\index{get\+Taille\+Reelle@{get\+Taille\+Reelle}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{get\+Taille\+Reelle()}{getTailleReelle()}}
+{\footnotesize\ttfamily int plateau\+::get\+Taille\+Reelle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classplateau_ab7e3c4e4727aed1b116a2f472ee98fc5}\label{classplateau_ab7e3c4e4727aed1b116a2f472ee98fc5}} 
 \index{plateau@{plateau}!placerpion@{placerpion}}
 \index{placerpion@{placerpion}!plateau@{plateau}}
 \subsubsection{\texorpdfstring{placerpion()}{placerpion()}}
-{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ plateau\+::placerpion (\begin{DoxyParamCaption}\item[{std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$}]{choix\+\_\+joueur }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::pair$<$int,int$>$ plateau\+::placerpion (\begin{DoxyParamCaption}\item[{std\+::pair$<$ std\+::pair$<$ int, int $>$, char $>$}]{ }\end{DoxyParamCaption})}
 
 
 
@@ -303,11 +383,11 @@ Permet de placer un pion ( = affecter une valeur à une case)
 
 Donne la valeur de la dernière ligne. 
 
-\mbox{\Hypertarget{classplateau_a1ab855651bf0107e7af3867873d54389}\label{classplateau_a1ab855651bf0107e7af3867873d54389}} 
+\mbox{\Hypertarget{classplateau_ae3ef298374f71fb9bcdcf7c878ba9be8}\label{classplateau_ae3ef298374f71fb9bcdcf7c878ba9be8}} 
 \index{plateau@{plateau}!ret\+Particuliers@{ret\+Particuliers}}
 \index{ret\+Particuliers@{ret\+Particuliers}!plateau@{plateau}}
 \subsubsection{\texorpdfstring{ret\+Particuliers()}{retParticuliers()}}
-{\footnotesize\ttfamily std\+::multimap$<$ char, std\+::pair$<$ int, int $>$ $>$ plateau\+::ret\+Particuliers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily std\+::multimap$<$char, std\+::pair$<$int,int$>$ $>$ plateau\+::ret\+Particuliers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -323,7 +403,37 @@ Permet de savoir quels cases sont aux coins pour pouvoir vérifier si le joueur 
 
 Donne la valeur de la taille demandée par le joueur. 
 
+\mbox{\Hypertarget{classplateau_accb292e7cf7ffd0df0fe4cec587ed5f7}\label{classplateau_accb292e7cf7ffd0df0fe4cec587ed5f7}} 
+\index{plateau@{plateau}!suivre\+Chemin@{suivre\+Chemin}}
+\index{suivre\+Chemin@{suivre\+Chemin}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{suivre\+Chemin()}{suivreChemin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classplateau_a94b54e0a84c850657a83176f812db222}{end\+Game} plateau\+::suivre\+Chemin (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classarbre}{arbre}$<$ int, int $>$ \&}]{chemin\+Joueurs,  }\item[{vector$<$ \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$$>$ \&}]{index\+Chemin\+Joueur }\end{DoxyParamCaption})}
 
+
+
+Fonction permettant de suivre le chemin qu\textquotesingle{}un joueur a créé sur le plateau. 
+
+Appelle suivre\+Chemin(int i, int j, arbre$<$int,int$>$\& chemin\+Joueurs, vector$<$noeud$<$int,int$>$$\ast$$>$\& index\+Chemin\+Joueur, noeud$<$int,int$>$$\ast$ noued\+Actuel) avec un noeud créé en racine de l\textquotesingle{}arbre \mbox{\Hypertarget{classplateau_a1128f1aaf7cb50cabec306d3171858b5}\label{classplateau_a1128f1aaf7cb50cabec306d3171858b5}} 
+\index{plateau@{plateau}!suivre\+Chemin@{suivre\+Chemin}}
+\index{suivre\+Chemin@{suivre\+Chemin}!plateau@{plateau}}
+\subsubsection{\texorpdfstring{suivre\+Chemin()}{suivreChemin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classplateau_a94b54e0a84c850657a83176f812db222}{end\+Game} plateau\+::suivre\+Chemin (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{\hyperlink{classarbre}{arbre}$<$ int, int $>$ \&}]{chemin\+Joueurs,  }\item[{vector$<$ \hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$$>$ \&}]{index\+Chemin\+Joueur,  }\item[{\hyperlink{classnoeud}{noeud}$<$ int, int $>$ $\ast$}]{noued\+Actuel }\end{DoxyParamCaption})}
+
+
+
+Suit le chemin créé par les pions voisins utilisateur. 
+
+
+\begin{DoxyItemize}
+\item Regarde tous les vosins possibles selon la position dans le plateau
+\item Si un voisin est trouvé, on le cherche dans le vecteur des noeuds de l\textquotesingle{}arbre \+:
+\begin{DoxyItemize}
+\item Il n\textquotesingle{}est pas trouvé, donc on l\textquotesingle{}ajoute et on continue la recherche a partir de ce point là (on met le booléen node\+\_\+found à 1)
+\item Si il est trouvé, on continue l\textquotesingle{}analyse
+\end{DoxyItemize}
+\item Si le booléen node\+\_\+found est à 1, alors est pas en fin de chemin, donc on ne fait rien
+\item Sinon, on regarde si le joueur a fait un cercle, une fourche ou un pont. 
+\end{DoxyItemize}
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classplateau_a3ed9526208bf28f0063bdf7c0efb9391}\label{classplateau_a3ed9526208bf28f0063bdf7c0efb9391}} 
@@ -358,7 +468,6 @@ Taille d\textquotesingle{}un côté du plateau.
 
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{plateau_8h}{plateau.\+h}\item 
-/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/cpp/\hyperlink{plateau_8cpp}{plateau.\+cpp}\end{DoxyCompactItemize}
+/\+Users/thibault/\+Google Drive/\+P\+R\+O\+G/\+S4/\+Projet/h/\hyperlink{plateau_8h}{plateau.\+h}\end{DoxyCompactItemize}

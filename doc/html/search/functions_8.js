@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['r_5fder_5fligne',['r_der_ligne',['../classplateau.html#a7dc94d2ffd474bd7871deb25d9af8091',1,'plateau']]],
-  ['retparticuliers',['retParticuliers',['../classplateau.html#a1ab855651bf0107e7af3867873d54389',1,'plateau']]],
-  ['returnia',['returnIa',['../classplayer.html#ac9ddc8bf95e4b1fc87658a3d8426b394',1,'player']]],
-  ['returnid',['returnId',['../classplayer.html#a6e4d00a9bdc81a1c4bc7cc5aef766510',1,'player']]],
-  ['returnnom',['returnNom',['../classplayer.html#ada00e16c16ff0be00896b1f6df9a21de',1,'player']]],
-  ['rtaillecote',['Rtaillecote',['../classplateau.html#ae9917aadf7efa09d855f98477da9e6f2',1,'plateau']]]
+  ['operator_3d_3d',['operator==',['../classnoeud.html#a2a6e29d59b713f170ca6bf72d2622ee9',1,'noeud']]]
 ];

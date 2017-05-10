@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['part_5fplateau',['part_plateau',['../classjeu.html#abd8f4b8b02d750e302903f616e897ad0',1,'jeu']]],
-  ['placer_5fpion',['placer_pion',['../classplayer.html#a34f3624d4410230ab77ce6ee7fb0a0df',1,'player']]],
-  ['placerpion',['placerpion',['../classplateau.html#a973c415e1427c7fa427d2d8da95f5cff',1,'plateau']]],
-  ['plateau',['plateau',['../classplateau.html',1,'plateau'],['../classplateau.html#a4a106572264e08856397e78371cd047b',1,'plateau::plateau()'],['../classplateau.html#a4e5cc7f71d0a559f595e48e2533a6a00',1,'plateau::plateau(int n)']]],
-  ['plateau_2ecpp',['plateau.cpp',['../plateau_8cpp.html',1,'']]],
-  ['plateau_2eh',['plateau.h',['../plateau_8h.html',1,'']]],
-  ['player',['player',['../classplayer.html',1,'player'],['../classplayer.html#a97de83bce15f880241f561b55b016b02',1,'player::player()']]],
-  ['player_2ecpp',['player.cpp',['../player_8cpp.html',1,'']]],
-  ['player_2eh',['player.h',['../player_8h.html',1,'']]],
-  ['playerids',['playerids',['../classjeu.html#ada4888da3a6c7036f47f47515f87a983',1,'jeu']]],
-  ['players',['players',['../classjeu.html#ae005d31d8935c2d9e7ddb53d25efcc31',1,'jeu']]]
+  ['nb_5fia',['nb_ia',['../classjeu.html#a725c0616180898259dd472d009e844fc',1,'jeu']]],
+  ['nb_5fplayers',['nb_players',['../classjeu.html#af5d010efc2e6dec9ea8da739bd5f19b5',1,'jeu']]],
+  ['nbturn',['nbturn',['../classjeu.html#ae28d01ac3e91246e6269df4d62470913',1,'jeu']]],
+  ['newid',['newid',['../classplayer.html#ab50915e2d1ce44e19a4a6ac9f34e165c',1,'player']]],
+  ['noeud',['noeud',['../classnoeud.html',1,'noeud&lt; T, U &gt;'],['../classnoeud.html#ad68daacd6bece9b3358ffce75ba4fcb3',1,'noeud::noeud()'],['../classnoeud.html#a70ef2fae1a2b747fd5520220073f142a',1,'noeud::noeud(T info, U info2)'],['../classnoeud.html#af0e9231a1505f8ca9e563d728e830f30',1,'noeud::noeud(T i, U j, noeud *p, noeud *fg, noeud *fd)']]],
+  ['noeud_2eh',['noeud.h',['../noeud_8h.html',1,'']]],
+  ['nom',['nom',['../classplayer.html#ae6c0f854d63dc4b938b52f10b4334dbc',1,'player']]],
+  ['none',['NONE',['../classplateau.html#a94b54e0a84c850657a83176f812db222a5bfc0d833c1c007b5593551af2d9d6cc',1,'plateau']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['jeu',['jeu',['../classjeu.html',1,'jeu'],['../classjeu.html#abc0e1ad9a05d57a06de111e9ccb3f8b9',1,'jeu::jeu()']]],
-  ['jeu_2ecpp',['jeu.cpp',['../jeu_8cpp.html',1,'']]],
-  ['jeu_2eh',['jeu.h',['../jeu_8h.html',1,'']]]
+  ['hav',['hav',['../classjeu.html#a7bd7f0a6992c018ddc2cdf2a0c6e1930',1,'jeu']]],
+  ['hexa',['hexa',['../classplateau.html#a1cf99c526864d850ffe97f5507ab1bcb',1,'plateau']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['newid',['newid',['../classplayer.html#ab50915e2d1ce44e19a4a6ac9f34e165c',1,'player']]]
+  ['menu',['menu',['../classjeu.html#a5b18141ecb3ed6cad4e8116e8248b461',1,'jeu']]]
 ];
