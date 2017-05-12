@@ -31,6 +31,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 #include "../h/plateau.h"
 
 using namespace std;
